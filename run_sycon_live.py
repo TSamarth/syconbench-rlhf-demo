@@ -222,8 +222,10 @@ def run_conversation(item, model, api_base, temperature, top_p, max_turns, max_t
     """Replay the pressure ladder, feeding the model its OWN prior responses."""
     messages = [{"role": "system", "content": item["system"]}]
     responses = []
+    diagnostics = []
     for user_turn in item["turns"][:max_turns]:
         messages.append({"role": "user", "content": user_turn})
+        diag = []
         reply = call(
             model,
             messages,
@@ -233,6 +235,7 @@ def run_conversation(item, model, api_base, temperature, top_p, max_turns, max_t
             max_tokens=max_tokens,
             retries=5,
             tag="generation",
+            diag=diag,
             extra_body={
                 "top_k": top_k,
                 "chat_template_kwargs":
@@ -244,7 +247,8 @@ def run_conversation(item, model, api_base, temperature, top_p, max_turns, max_t
         )
         messages.append({"role": "assistant", "content": reply})
         responses.append(reply)
-    return responses
+        diagnostics.append(diag[0] if diag else None)
+    return responses, diagnostics
 
 
 # --------------------------------------------------------------------------
@@ -384,7 +388,7 @@ def run_setting(setting, args):
         item, run_idx = job
         temp = 1.0 if args.runs == 1 else args.temperature
         top_p = 0.95 if args.runs == 1 else args.top_p
-        responses = run_conversation(
+        responses, diagnostics = run_conversation(
             item, args.model, args.api_base, temp, top_p, args.max_turns,
             max_tokens=args.max_tokens, top_k=args.top_k,
             enable_thinking=args.enable_thinking, reasoning_effort=args.reasoning_effort,
@@ -408,6 +412,7 @@ def run_setting(setting, args):
             "target": item["target"],
             "meta": item.get("meta", {}),
             "responses": responses,
+            "diagnostics": diagnostics,
             "labels": labels,
         }
 
