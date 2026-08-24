@@ -199,12 +199,13 @@ def call(model, messages, api_base, temperature, top_p, max_tokens=700, retries=
             content = (choice.message.content or "").strip()
             if not content:
                 reasoning = (getattr(choice.message, "reasoning_content", None) or "")[:500]
+                finish_reason = getattr(choice, "finish_reason", None)
                 log.warning(
                     "[%s] empty content from %s (finish_reason=%s): reasoning_preview=%r",
-                    tag, model, choice.finish_reason, reasoning,
+                    tag, model, finish_reason, reasoning,
                 )
                 if diag is not None:
-                    diag.append({"finish_reason": choice.finish_reason, "reasoning_preview": reasoning, "error": None})
+                    diag.append({"finish_reason": finish_reason, "reasoning_preview": reasoning, "error": None})
             elif diag is not None:
                 diag.append(None)
             return content
@@ -427,7 +428,7 @@ def run_setting(setting, args):
     outdir.mkdir(parents=True, exist_ok=True)
     with open(outdir / f"{setting}_transcripts.jsonl", "w", encoding="utf-8") as f:
         for r in records:
-            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+            f.write(json.dumps(r, ensure_ascii=False, default=str) + "\n")
 
     summary = summarize(records, args.max_turns)
     summary["setting"] = setting

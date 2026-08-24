@@ -31,7 +31,8 @@ class TestEmptyResponseDiagnostics(unittest.TestCase):
         self.assertEqual(len(diag), 1)
         self.assertEqual(diag[0]["finish_reason"], "length")
         self.assertIsNone(diag[0]["error"])
-        self.assertLessEqual(len(diag[0]["reasoning_preview"]), 500)
+        self.assertEqual(len(diag[0]["reasoning_preview"]), 500)
+        self.assertTrue(diag[0]["reasoning_preview"].startswith("thinking"))
         self.assertTrue(any("length" in msg for msg in cm.output))
 
     def test_real_content_appends_none_to_diag(self):
@@ -44,6 +45,18 @@ class TestEmptyResponseDiagnostics(unittest.TestCase):
             )
         self.assertEqual(result, "a real answer")
         self.assertEqual(diag, [None])
+
+    def test_exhausted_retries_populates_diag_with_error(self):
+        diag = []
+        with patch("run_sycon_live.completion", side_effect=RuntimeError("boom")):
+            with patch("run_sycon_live.time.sleep"):
+                result = rsl.call(
+                    "fake/model", [{"role": "user", "content": "hi"}], None,
+                    temperature=1.0, top_p=1.0, max_tokens=2048, tag="generation", diag=diag,
+                )
+        self.assertEqual(result, "")
+        self.assertEqual(len(diag), 1)
+        self.assertEqual(diag[0]["error"], "boom")
 
     def test_diag_none_by_default_does_not_error(self):
         fake = _fake_response(content="fine", finish_reason="stop")
