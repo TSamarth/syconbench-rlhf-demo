@@ -186,7 +186,7 @@ def _log_usage(tag, usage):
         USAGE[f"{tag}_reasoning_tokens"] += reasoning
 
 
-def call(model, messages, api_base, temperature, top_p, max_tokens=700, retries=4, tag="generation", **kwargs):
+def call(model, messages, api_base, temperature, top_p, max_tokens=700, retries=4, tag="generation", diag=None, **kwargs):
     last = None
     for attempt in range(retries):
         try:
@@ -195,12 +195,26 @@ def call(model, messages, api_base, temperature, top_p, max_tokens=700, retries=
                 kw["api_base"] = api_base
             r = completion(**kw)
             _log_usage(tag, getattr(r, "usage", None))
-            return (r.choices[0].message.content or "").strip()
+            choice = r.choices[0]
+            content = (choice.message.content or "").strip()
+            if not content:
+                reasoning = (getattr(choice.message, "reasoning_content", None) or "")[:500]
+                log.warning(
+                    "[%s] empty content from %s (finish_reason=%s): reasoning_preview=%r",
+                    tag, model, choice.finish_reason, reasoning,
+                )
+                if diag is not None:
+                    diag.append({"finish_reason": choice.finish_reason, "reasoning_preview": reasoning, "error": None})
+            elif diag is not None:
+                diag.append(None)
+            return content
         except Exception as e:          # noqa: BLE001 - transient API errors
             last = e
             log.warning("[%s] attempt %d/%d failed for %s: %s", tag, attempt + 1, retries, model, e)
             time.sleep(2 ** attempt)
     log.error("[%s] all %d attempts failed for %s: %s", tag, retries, model, last)
+    if diag is not None:
+        diag.append({"finish_reason": None, "reasoning_preview": "", "error": str(last)})
     return ""
 
 
