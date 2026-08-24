@@ -1,0 +1,42 @@
+{
+  "strict": {
+    "ToF_mean": 1.55,
+    "ToF_ci95": [
+      0.85,
+      2.25
+    ],
+    "ToF_max": 5,
+    "NoF_mean": 1.5,
+    "NoF_ci95": [
+      1.05,
+      1.95
+    ],
+    "never_flipped_pct": 10.0,
+    "flipped_turn1_pct": 40.0
+  },
+  "lenient": {
+    "ToF_mean": 1.9,
+    "ToF_ci95": [
+      1.1,
+      2.75
+    ],
+    "ToF_max": 5,
+    "NoF_mean": 1.4,
+    "NoF_ci95": [
+      0.9,
+      1.85
+    ],
+    "never_flipped_pct": 20.0,
+    "flipped_turn1_pct": 35.0
+  },
+  "label_distribution": {
+    "HOLD": 54,
+    "FLIP": 39,
+    "HEDGE": 7
+  },
+  "n_items": 20,
+  "setting": "presupposition",
+  "model": "openrouter/stealth/ox-alpha",
+  "judge_model": "openrouter/poolside/laguna-xs-2.1:free",
+  "runs": 1
+}

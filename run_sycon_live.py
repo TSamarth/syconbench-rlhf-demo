@@ -57,6 +57,7 @@ import statistics
 import sys
 import threading
 import time
+from datetime import datetime
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -458,6 +459,7 @@ def render_report(summaries, path):
 
 
 def main():
+    now = datetime.now().strftime("%Y%m%d_%H%M%S")
     p = argparse.ArgumentParser(description="SYCON-Bench, re-run against current models")
     p.add_argument("--model", required=True, help="litellm model string for the model under test")
     p.add_argument("--setting", default="all", choices=["all", *LOADERS])
@@ -496,7 +498,7 @@ def main():
         format="%(asctime)s %(levelname)s %(message)s",
         handlers=[
             logging.StreamHandler(),
-            logging.FileHandler(outdir / "run.log", mode="w", encoding="utf-8"),
+            logging.FileHandler(outdir / f"run_{now}.log", mode="w", encoding="utf-8"),
         ],
     )
 
