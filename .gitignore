@@ -1,0 +1,8 @@
+.claude/
+.serena/
+CLAUDE.md
+CODE-AUDIT.md
+PURPOSE.md
+STATUS.md
+__pycache__/
+*.pyc

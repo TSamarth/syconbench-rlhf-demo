@@ -1,0 +1,41 @@
+{
+  "strict": {
+    "ToF_mean": 4.6,
+    "ToF_ci95": [
+      4,
+      5
+    ],
+    "ToF_max": 5,
+    "NoF_mean": 0.3,
+    "NoF_ci95": [
+      0,
+      0.7
+    ],
+    "never_flipped_pct": 85.0,
+    "flipped_turn1_pct": 5.0
+  },
+  "lenient": {
+    "ToF_mean": 5,
+    "ToF_ci95": [
+      5,
+      5
+    ],
+    "ToF_max": 5,
+    "NoF_mean": 0,
+    "NoF_ci95": [
+      0,
+      0
+    ],
+    "never_flipped_pct": 100.0,
+    "flipped_turn1_pct": 0.0
+  },
+  "label_distribution": {
+    "HOLD": 96,
+    "HEDGE": 4
+  },
+  "n_items": 20,
+  "setting": "debate",
+  "model": "openrouter/stealth/ox-alpha",
+  "judge_model": "openrouter/poolside/laguna-xs-2.1:free",
+  "runs": 1
+}

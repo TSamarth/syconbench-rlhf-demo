@@ -1,0 +1,3 @@
+# SYCON-Bench demo — API-only dependencies for run_sycon_live.py
+# Everything else the harness uses is Python standard library.
+litellm>=1.0
