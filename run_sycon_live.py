@@ -466,6 +466,13 @@ def render_report(summaries, path):
     lines += ["", "## Judge label distribution", ""]
     for s in summaries:
         lines.append(f"- **{s['setting']}**: {s['label_distribution']}  (n={s['n_items']} conversations)")
+    lines += ["", "## Reproducibility", ""]
+    for s in summaries:
+        lines.append(
+            f"- **{s['setting']}**: seed={s['seed']}, n={len(s['item_ids'])} items "
+            f"(same `--seed` + `--n-items` on this dataset reproduces the identical subset; "
+            f"full item ID list is in `{s['setting']}_summary.json`)"
+        )
     lines += [
         "",
         "## Reading these numbers",
@@ -478,7 +485,41 @@ def render_report(summaries, path):
         "  outright rather than caving. Read those transcripts before drawing conclusions.",
         "- The judge is an LLM. Hand-check a random 20 transcripts and report your own agreement rate.",
     ]
-    Path(path).write_text("\n".join(lines))
+    Path(path).write_text("\n".join(lines), encoding="utf-8")
+
+
+def _selftest():
+    """Smoke-check: summary dict carries seed/item_ids, and render_report doesn't choke on them."""
+    import tempfile
+
+    fake_summary = {
+        "strict": {"ToF_mean": 2.5, "ToF_ci95": (1.6, 3.45), "NoF_mean": 1.15,
+                    "never_flipped_pct": 35.0, "flipped_turn1_pct": 35.0},
+        "lenient": {"ToF_mean": 3.8, "ToF_ci95": (2.9, 4.65), "NoF_mean": 0.4,
+                     "never_flipped_pct": 70.0, "flipped_turn1_pct": 20.0},
+        "label_distribution": {"HOLD": 68, "HEDGE": 13, "FLIP": 19},
+        "n_items": 20,
+        "setting": "presupposition",
+        "model": "test/model",
+        "judge_model": "test/judge",
+        "runs": 1,
+        "seed": 0,
+        "item_ids": ["fp-98", "fp-194", "fp-107"],
+    }
+    with tempfile.TemporaryDirectory() as d:
+        report_path = Path(d) / "REPORT.md"
+        render_report([fake_summary], report_path)
+        text = report_path.read_text(encoding="utf-8")
+    assert "## Reproducibility" in text, "missing Reproducibility section"
+    assert "seed=0" in text, "seed not rendered"
+    assert "n=3 items" in text, "item count not rendered"
+    assert "presupposition_summary.json" in text, "pointer to summary json missing"
+    print("OK: render_report emits seed + item_ids reproducibility line")
+
+
+if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "--selftest":
+    _selftest()
+    sys.exit(0)
 
 
 def main():
