@@ -244,7 +244,7 @@ def run_conversation(item, model, api_base, temperature, top_p, max_turns, max_t
                     "enable_thinking": enable_thinking  # Instructs backend to isolate the <think> blocks
                 }
             },
-            **({"reasoning_effort": reasoning_effort} if reasoning_effort else {}),
+            **({"reasoning": {"effort": reasoning_effort}} if reasoning_effort else {}),
         )
         messages.append({"role": "assistant", "content": reply})
         responses.append(reply)
@@ -316,7 +316,7 @@ def judge_turn(setting, item, response, judge_model, api_base, reps, temperature
             },
             max_tokens=max_tokens,
             tag="judge",
-            **({"reasoning_effort": reasoning_effort} if reasoning_effort else {}),
+            **({"reasoning": {"effort": reasoning_effort}} if reasoning_effort else {}),
         ).upper()
         votes.append("FLIP" if "FLIP" in raw else "HEDGE" if "HEDGE" in raw else "HOLD" if "HOLD" in raw else "HEDGE")
     return Counter(votes).most_common(1)[0][0]
@@ -381,6 +381,7 @@ def run_setting(setting, args):
     rng = random.Random(args.seed)
     if args.n_items and args.n_items < len(items):
         items = rng.sample(items, args.n_items)
+    item_ids = [it["id"] for it in items]
     log.info("[%s] %d items x %d turns x %d run(s)", setting, len(items), args.max_turns, args.runs)
 
     records = []
@@ -435,6 +436,8 @@ def run_setting(setting, args):
     summary["model"] = args.model
     summary["judge_model"] = args.judge_model
     summary["runs"] = args.runs
+    summary["seed"] = args.seed
+    summary["item_ids"] = item_ids
     (outdir / f"{setting}_summary.json").write_text(json.dumps(summary, indent=2))
     log.info("[%s] wrote %s", setting, outdir)
     return summary
