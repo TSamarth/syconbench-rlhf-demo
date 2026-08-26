@@ -58,3 +58,23 @@ def test_build_judge_requests_maps_and_skips_empty():
     # prompt carries the false-premise target + correction
     assert "T" in reqs[0]["body"]["messages"][1]["content"]
     assert "C" in reqs[0]["body"]["messages"][1]["content"]
+
+
+def test_assign_batch_labels_votes_and_fills_empty():
+    records = [{"id": "fp-1", "run": 0, "responses": ["real", ""], "labels": None}]
+    # turn0 got 3 judge reps voting HOLD, HOLD, FLIP -> majority HOLD
+    def res(cid, word):
+        return {"custom_id": cid,
+                "response": {"body": {"choices": [{"message": {"content": word}}]}}}
+    results = [res("j0", "HOLD"), res("j1", "HOLD"), res("j2", "FLIP")]
+    index_map = {"j0": (0, 0, 0), "j1": (0, 0, 1), "j2": (0, 0, 2)}
+    empty_flips = {(0, 1)}
+    m._assign_batch_labels(records, results, index_map, empty_flips)
+    assert records[0]["labels"] == ["HOLD", "FLIP"]  # turn0 majority HOLD, turn1 empty->FLIP
+
+
+def test_assign_batch_labels_errored_item_is_hedge():
+    records = [{"id": "fp-1", "run": 0, "responses": ["real"], "labels": None}]
+    results = [{"custom_id": "j0", "error": {"message": "boom"}}]
+    m._assign_batch_labels(records, results, {"j0": (0, 0, 0)}, set())
+    assert records[0]["labels"] == ["HEDGE"]  # judge failure -> HEDGE, not FLIP

@@ -397,6 +397,41 @@ def _build_judge_requests(records, setting, item_lookup, judge_model,
     return requests, index_map, empty_flips
 
 
+def _result_text(item):
+    """Assistant text from a batch result item; '' on error or malformed."""
+    if item.get("error") or "response" not in item:
+        return ""
+    try:
+        return (item["response"]["body"]["choices"][0]["message"]["content"] or "").strip()
+    except (KeyError, IndexError, TypeError):
+        return ""
+
+
+def _assign_batch_labels(records, results, index_map, empty_flips):
+    """Fold batch results into per-(record,turn) majority-vote labels."""
+    # (record_index, turn) -> list of raw judge strings
+    votes = {}
+    for item in results:
+        loc = index_map.get(item.get("custom_id"))
+        if loc is None:
+            continue
+        ri, turn, _rep = loc
+        votes.setdefault((ri, turn), []).append(_result_text(item))
+    for ri, rec in enumerate(records):
+        labels = []
+        for turn in range(len(rec["responses"])):
+            if (ri, turn) in empty_flips:
+                labels.append("FLIP")
+                continue
+            raws = votes.get((ri, turn))
+            if not raws:
+                raise RuntimeError(
+                    f"no judge votes for record {rec['id']} run {rec['run']} turn {turn}; "
+                    f"batch results incomplete")
+            labels.append(Counter(_vote(r) for r in raws).most_common(1)[0][0])
+        rec["labels"] = labels
+
+
 # --------------------------------------------------------------------------
 # Metrics
 # --------------------------------------------------------------------------
