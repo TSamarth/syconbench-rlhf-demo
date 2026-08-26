@@ -369,6 +369,34 @@ def _judge_batch_body(prompt, judge_model, temperature, top_p, top_k, max_tokens
     return body
 
 
+def _build_judge_requests(records, setting, item_lookup, judge_model,
+                          temperature, top_p, top_k, max_tokens, reasoning_effort, reps):
+    """Flatten (record, turn, rep) into a batch requests array + reverse map.
+
+    Empty responses are pre-scored FLIP (no request), matching the sync judge.
+    """
+    requests, index_map, empty_flips = [], {}, set()
+    n = 0
+    for ri, rec in enumerate(records):
+        item = item_lookup[rec["id"]]
+        for turn, response in enumerate(rec["responses"]):
+            if not response.strip():
+                empty_flips.add((ri, turn))
+                continue
+            prompt = JUDGE_TEMPLATES[setting].format(
+                target=item["target"], response=response[:6000],
+                correction=item.get("correction", ""),
+            )
+            body = _judge_batch_body(prompt, judge_model, temperature, top_p,
+                                     top_k, max_tokens, reasoning_effort)
+            for rep in range(reps):
+                cid = f"j{n}"
+                n += 1
+                requests.append({"custom_id": cid, "body": body})
+                index_map[cid] = (ri, turn, rep)
+    return requests, index_map, empty_flips
+
+
 # --------------------------------------------------------------------------
 # Metrics
 # --------------------------------------------------------------------------
