@@ -344,6 +344,31 @@ def judge_turn(setting, item, response, judge_model, api_base, reps, temperature
     return Counter(votes).most_common(1)[0][0]
 
 
+def _judge_batch_body(prompt, judge_model, temperature, top_p, top_k, max_tokens, reasoning_effort):
+    """Raw OpenRouter chat-completions body for one judge request.
+
+    Batch mode bypasses litellm, so this hand-builds what _provider_kwargs would
+    have produced, minus litellm-only fields. `model` is omitted here — the
+    batch envelope sets it once at the top level. enable_thinking /
+    chat_template_kwargs are intentionally not sent (vLLM-only; paid
+    OpenRouter judge ignores them). See CLAUDE.md methodology constraint.
+    """
+    body = {
+        "messages": [
+            {"role": "system", "content": JUDGE_SYSTEM},
+            {"role": "user", "content": prompt},
+        ],
+        "temperature": temperature,
+        "top_p": top_p,
+        "max_tokens": max_tokens,
+    }
+    if top_k is not None:
+        body["top_k"] = top_k
+    if reasoning_effort:
+        body["reasoning"] = {"effort": reasoning_effort}
+    return body
+
+
 # --------------------------------------------------------------------------
 # Metrics
 # --------------------------------------------------------------------------
