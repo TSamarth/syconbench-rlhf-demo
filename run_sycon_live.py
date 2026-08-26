@@ -59,7 +59,7 @@ import threading
 import time
 from datetime import datetime
 from collections import Counter
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 try:
@@ -188,11 +188,12 @@ def _log_usage(tag, usage):
 
 def call(model, messages, api_base, temperature, top_p, max_tokens=700, retries=4, tag="generation", diag=None, **kwargs):
     last = None
-    for attempt in range(retries):
+    for attempt in range(1, retries+1):
         try:
             kw = dict(model=model, messages=messages, temperature=temperature, top_p=top_p, max_tokens=max_tokens, **kwargs)
             if api_base:
                 kw["api_base"] = api_base
+            time.sleep(4)  # Sleep to avoid hitting rate limits on rapid-fire calls (especially with multiple threads)
             r = completion(**kw)
             _log_usage(tag, getattr(r, "usage", None))
             choice = r.choices[0]
@@ -219,11 +220,35 @@ def call(model, messages, api_base, temperature, top_p, max_tokens=700, retries=
     return ""
 
 
+def _provider_kwargs(model, top_k, enable_thinking, reasoning_effort):
+    """Extra call() kwargs, branched on provider quirks.
+
+    OpenAI's gpt-5 family rejects vLLM-style extra_body (chat_template_kwargs,
+    top_k) and the {"reasoning": {"effort": ...}} dict form; it only accepts
+    the plain reasoning_effort field. Everything else (vLLM/open-weight
+    backends via litellm) wants both. drop_params=True is a safety net for
+    whatever litellm doesn't already know to strip per-model.
+    """
+    kwargs = {"drop_params": True}
+    if reasoning_effort:
+        kwargs["reasoning_effort"] = reasoning_effort
+    if "openai" in model.lower() and "gpt-5" in model.lower():
+        return kwargs
+    extra_body = {"chat_template_kwargs": {"enable_thinking": enable_thinking}}
+    if top_k is not None:
+        extra_body["top_k"] = top_k
+    kwargs["extra_body"] = extra_body
+    if reasoning_effort:
+        kwargs["reasoning"] = {"effort": reasoning_effort}
+    return kwargs
+
+
 def run_conversation(item, model, api_base, temperature, top_p, max_turns, max_tokens, top_k, enable_thinking, reasoning_effort):
     """Replay the pressure ladder, feeding the model its OWN prior responses."""
     messages = [{"role": "system", "content": item["system"]}]
     responses = []
     diagnostics = []
+    extra = _provider_kwargs(model, top_k, enable_thinking, reasoning_effort)
     for user_turn in item["turns"][:max_turns]:
         messages.append({"role": "user", "content": user_turn})
         diag = []
@@ -237,14 +262,7 @@ def run_conversation(item, model, api_base, temperature, top_p, max_turns, max_t
             retries=5,
             tag="generation",
             diag=diag,
-            extra_body={
-                "top_k": top_k,
-                "chat_template_kwargs":
-                {
-                    "enable_thinking": enable_thinking  # Instructs backend to isolate the <think> blocks
-                }
-            },
-            **({"reasoning": {"effort": reasoning_effort}} if reasoning_effort else {}),
+            **extra,
         )
         messages.append({"role": "assistant", "content": reply})
         responses.append(reply)
@@ -298,6 +316,7 @@ def judge_turn(setting, item, response, judge_model, api_base, reps, temperature
     prompt = JUDGE_TEMPLATES[setting].format(
         target=item["target"], response=response[:6000], correction=item.get("correction", "")
     )
+    extra = _provider_kwargs(judge_model, top_k, enable_thinking, reasoning_effort)
     votes = []
     for _ in range(reps):
         raw = call(
@@ -307,16 +326,9 @@ def judge_turn(setting, item, response, judge_model, api_base, reps, temperature
             temperature=temperature,
             top_p=top_p,
             retries=5,
-            extra_body={
-                "top_k": top_k,
-                "chat_template_kwargs":
-                {
-                    "enable_thinking": enable_thinking  # Instructs backend to isolate the <think> blocks
-                }
-            },
             max_tokens=max_tokens,
             tag="judge",
-            **({"reasoning": {"effort": reasoning_effort}} if reasoning_effort else {}),
+            **extra,
         ).upper()
         votes.append("FLIP" if "FLIP" in raw else "HEDGE" if "HEDGE" in raw else "HOLD" if "HOLD" in raw else "HEDGE")
     return Counter(votes).most_common(1)[0][0]
@@ -373,6 +385,48 @@ def summarize(records, max_turns):
 
 
 # --------------------------------------------------------------------------
+# Resume support — persist per conversation, skip what's already on disk
+# --------------------------------------------------------------------------
+
+def _load_done(transcripts_path):
+    """Return {(id, run): record} for conversations already written to disk."""
+    done = {}
+    if transcripts_path.exists():
+        with open(transcripts_path, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    r = json.loads(line)
+                except json.JSONDecodeError:
+                    # A hard kill can truncate the final line; skip it and
+                    # re-run that one conversation rather than crash the resume.
+                    log.warning("[resume] skipping malformed transcript line in %s",
+                                transcripts_path.name)
+                    continue
+                done[(r["id"], r["run"])] = r
+    return done
+
+
+# Everything that changes which conversations run OR how they're generated/judged.
+# Resuming across a change to any of these would splice differently-produced
+# conversations into one dataset — refuse instead (CLAUDE.md rules 2 & 10).
+_META_GUARD_KEYS = [
+    "model", "judge_model", "setting", "seed", "n_items", "runs", "max_turns",
+    "judge_reps", "item_ids",
+    "temperature", "top_p", "top_k", "max_tokens", "enable_thinking", "reasoning_effort",
+    "judge_temperature", "judge_top_p", "judge_top_k", "judge_max_tokens",
+    "judge_enable_thinking", "judge_reasoning_effort",
+]
+
+
+def _meta_conflicts(saved, current):
+    """Keys whose values differ between a saved run_meta and the current invocation."""
+    return [k for k in _META_GUARD_KEYS if saved.get(k) != current.get(k)]
+
+
+# --------------------------------------------------------------------------
 # Driver
 # --------------------------------------------------------------------------
 
@@ -384,7 +438,48 @@ def run_setting(setting, args):
     item_ids = [it["id"] for it in items]
     log.info("[%s] %d items x %d turns x %d run(s)", setting, len(items), args.max_turns, args.runs)
 
-    records = []
+    outdir = Path(args.output_dir) / args.model.replace("/", "_").split(":")[0]
+    outdir.mkdir(parents=True, exist_ok=True)
+    transcripts_path = outdir / f"{setting}_transcripts.jsonl"
+    meta_path = outdir / f"{setting}_run_meta.json"
+    meta = {
+        "model": args.model, "judge_model": args.judge_model, "setting": setting,
+        "seed": args.seed, "n_items": args.n_items, "runs": args.runs,
+        "max_turns": args.max_turns, "judge_reps": args.judge_reps, "item_ids": item_ids,
+        "temperature": args.temperature, "top_p": args.top_p, "top_k": args.top_k,
+        "max_tokens": args.max_tokens, "enable_thinking": args.enable_thinking,
+        "reasoning_effort": args.reasoning_effort,
+        "judge_temperature": args.judge_temperature, "judge_top_p": args.judge_top_p,
+        "judge_top_k": args.judge_top_k, "judge_max_tokens": args.judge_max_tokens,
+        "judge_enable_thinking": args.judge_enable_thinking,
+        "judge_reasoning_effort": args.judge_reasoning_effort,
+    }
+
+    # Resume: skip conversations already on disk; refuse if the run identity changed.
+    if args.resume and transcripts_path.exists():
+        if not meta_path.exists():
+            sys.exit(f"[{setting}] cannot resume: {meta_path.name} missing; "
+                     f"delete {transcripts_path.name} to start fresh")
+        saved = json.loads(meta_path.read_text(encoding="utf-8"))
+        conflicts = _meta_conflicts(saved, meta)
+        if conflicts:
+            sys.exit(f"[{setting}] refusing to resume: config changed vs saved run "
+                     f"({', '.join(conflicts)}); use a fresh --output-dir or drop --resume")
+        done = _load_done(transcripts_path)
+        log.info("[%s] resuming: %d conversation(s) already on disk", setting, len(done))
+    else:
+        if transcripts_path.exists() and transcripts_path.stat().st_size:
+            log.warning("[%s] overwriting existing transcripts; pass --resume to continue instead",
+                        setting)
+        # Truncate the stale transcript in the same breath as writing the new meta,
+        # so a crash in between can't leave old data paired with new meta (which a
+        # later --resume would merge undetected). Both branches then append.
+        transcripts_path.write_text("", encoding="utf-8")
+        meta_path.write_text(json.dumps(meta, indent=2), encoding="utf-8")
+        done = {}
+    write_mode = "a"
+
+    records = list(done.values())
 
     def one(job):
         item, run_idx = job
@@ -418,18 +513,30 @@ def run_setting(setting, args):
             "labels": labels,
         }
 
-    jobs = [(it, k) for it in items for k in range(args.runs)]
-    with ThreadPoolExecutor(max_workers=args.workers) as ex:
-        for i, rec in enumerate(ex.map(one, jobs), 1):
+    jobs = [(it, k) for it in items for k in range(args.runs) if (it["id"], k) not in done]
+    if done:
+        log.info("[%s] %d/%d conversations remaining after skip", setting, len(jobs),
+                 args.runs * len(items))
+
+    # as_completed + flush-per-record: every finished conversation hits disk
+    # immediately, so a kill re-runs at most `workers` in-flight conversations
+    # rather than the whole setting (map's in-order yield would block writes
+    # behind a single stalled early job).
+    with open(transcripts_path, write_mode, encoding="utf-8") as f, \
+            ThreadPoolExecutor(max_workers=args.workers) as ex:
+        futures = [ex.submit(one, job) for job in jobs]
+        for i, fut in enumerate(as_completed(futures), 1):
+            rec = fut.result()
             records.append(rec)
+            f.write(json.dumps(rec, ensure_ascii=False, default=str) + "\n")
+            f.flush()
             if i % 10 == 0:
                 log.info("[%s] %d/%d conversations done", setting, i, len(jobs))
 
-    outdir = Path(args.output_dir) / args.model.replace("/", "_")
-    outdir.mkdir(parents=True, exist_ok=True)
-    with open(outdir / f"{setting}_transcripts.jsonl", "w", encoding="utf-8") as f:
-        for r in records:
-            f.write(json.dumps(r, ensure_ascii=False, default=str) + "\n")
+    # as_completed and resume-prepended records arrive in nondeterministic order;
+    # sort by (id, run) so bootstrap_ci resamples a fixed order and CIs stay
+    # reproducible for a given --seed across fresh runs and resumes.
+    records.sort(key=lambda r: (r["id"], r["run"]))
 
     summary = summarize(records, args.max_turns)
     summary["setting"] = setting
@@ -516,6 +623,26 @@ def _selftest():
     assert "presupposition_summary.json" in text, "pointer to summary json missing"
     print("OK: render_report emits seed + item_ids reproducibility line")
 
+    # Resume guard + done-set loading (no API calls)
+    m = {"model": "a", "judge_model": "b", "setting": "debate", "seed": 0,
+         "n_items": 40, "runs": 3, "max_turns": 5, "judge_reps": 3, "item_ids": ["x"]}
+    assert _meta_conflicts(m, m) == [], "identical meta should not conflict"
+    assert _meta_conflicts(m, {**m, "seed": 1}) == ["seed"], "seed change should conflict"
+
+    with tempfile.TemporaryDirectory() as d:
+        tp = Path(d) / "t.jsonl"
+        tp.write_text(
+            json.dumps({"id": "fp-1", "run": 0}) + "\n" +
+            json.dumps({"id": "fp-1", "run": 1}) + "\n",
+            encoding="utf-8",
+        )
+        done = _load_done(tp)
+        assert set(done) == {("fp-1", 0), ("fp-1", 1)}, "done-set keys wrong"
+        items = [{"id": "fp-1"}, {"id": "fp-2"}]
+        jobs = [(it["id"], k) for it in items for k in range(2) if (it["id"], k) not in done]
+        assert jobs == [("fp-2", 0), ("fp-2", 1)], f"job filter kept wrong jobs: {jobs}"
+    print("OK: resume guard skips done conversations and refuses on config change")
+
 
 if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "--selftest":
     _selftest()
@@ -535,14 +662,14 @@ def main():
     p.add_argument("--runs", type=int, default=1, help=">1 samples at --temperature for CIs")
     p.add_argument("--temperature", type=float, default=1.0)
     p.add_argument("--top-p", type=float, default=0.95)
-    p.add_argument("--top-k", type=int, default=20)
+    p.add_argument("--top-k", type=int, default=None, help="omit to not send")
     p.add_argument("--max-tokens", type=int, default=700, help="generation completion budget (incl. reasoning tokens)")
     p.add_argument("--reasoning-effort", default=None, help="e.g. low/medium/high; omit to not send")
     p.add_argument("--enable-thinking", action=argparse.BooleanOptionalAction, default=True)
 
     p.add_argument("--judge-temperature", type=float, default=None, help="defaults to 0.0 if --judge-reps==1 else 1.0")
     p.add_argument("--judge-top-p", type=float, default=1.0)
-    p.add_argument("--judge-top-k", type=int, default=20)
+    p.add_argument("--judge-top-k", type=int, default=None, help="omit to not send")
     p.add_argument("--judge-max-tokens", type=int, default=2048, help="judge completion budget (incl. reasoning tokens)")
     p.add_argument("--judge-reasoning-effort", default=None, help="e.g. low/medium/high; omit to not send")
     p.add_argument("--judge-enable-thinking", action=argparse.BooleanOptionalAction, default=True)
@@ -550,12 +677,15 @@ def main():
     p.add_argument("--max-turns", type=int, default=5)
     p.add_argument("--workers", type=int, default=4)
     p.add_argument("--seed", type=int, default=0)
+    p.add_argument("--resume", action="store_true",
+                   help="skip conversations already in {setting}_transcripts.jsonl; "
+                        "refuses if seed/model/n-items/etc. differ from the saved run_meta.json")
     p.add_argument("--output-dir", default="results")
     args = p.parse_args()
 
     args.judge_model = args.judge_model or args.model
 
-    outdir = Path(args.output_dir) / args.model.replace("/", "_")
+    outdir = Path(args.output_dir) / args.model.replace("/", "_").split(":")[0]
     outdir.mkdir(parents=True, exist_ok=True)
     logging.basicConfig(
         level=logging.INFO,

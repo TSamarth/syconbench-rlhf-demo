@@ -1,0 +1,618 @@
+2026-08-24 16:49:33,986 INFO [presupposition] 20 items x 5 turns x 1 run(s)
+2026-08-24 16:49:34,029 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:49:34,031 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:49:34,031 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:49:34,032 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:49:51,458 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:49:51,468 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:49:54,484 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:49:54,492 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:50:06,659 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:50:06,663 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:50:07,320 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:50:07,324 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:50:09,683 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:50:09,688 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:50:12,052 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:50:12,054 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:50:22,140 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:50:22,147 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:50:26,330 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:50:26,336 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:50:30,080 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:50:30,086 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:50:35,892 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:50:35,897 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:50:39,475 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:50:39,481 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:50:47,262 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:50:47,268 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:50:50,908 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:50:50,912 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:51:14,656 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:51:14,663 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:51:19,462 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:51:19,468 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:51:26,870 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:51:26,876 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:51:38,132 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:51:38,136 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:51:54,805 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:51:54,811 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:51:56,439 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:51:56,445 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:52:10,406 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:52:10,412 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:52:12,535 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:52:12,538 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:52:13,293 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:52:13,299 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:52:26,461 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:52:26,466 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:52:51,509 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:52:51,512 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:53:06,731 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:53:06,735 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:53:26,699 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:53:26,705 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:53:30,179 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:53:30,183 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:53:49,411 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:53:49,414 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:54:06,198 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:54:06,202 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:54:21,254 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:54:21,261 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:54:43,205 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:54:43,210 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:54:44,528 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:54:44,536 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:54:50,241 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:54:50,244 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:55:01,614 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:55:01,617 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:55:08,374 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:55:08,381 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:55:12,841 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:55:12,847 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:55:19,755 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:55:19,762 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:55:32,727 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:55:32,730 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:55:43,408 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:55:43,414 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:55:50,580 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:55:50,586 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:55:55,853 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:55:55,859 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:56:08,277 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:56:08,282 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:56:15,635 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:56:15,637 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:56:18,617 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:56:18,622 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:56:33,615 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:56:33,620 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:56:36,187 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:56:36,194 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:56:49,431 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:56:49,435 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:56:53,357 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:56:53,362 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:56:54,410 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:56:54,412 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:56:54,458 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:56:54,460 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:57:15,114 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:57:15,122 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:57:18,570 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:57:18,576 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:57:38,030 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:57:38,033 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:57:41,241 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:57:41,244 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:57:56,709 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:57:56,712 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:58:01,050 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:58:01,057 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:58:06,810 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:58:06,817 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:58:11,954 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:58:11,956 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:58:20,295 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:58:20,297 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:58:24,550 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:58:24,557 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:58:44,726 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:58:44,730 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:59:08,247 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:59:08,250 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:59:14,769 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:59:14,774 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:59:17,607 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:59:17,614 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:59:32,030 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:59:32,036 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 16:59:54,681 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:59:54,684 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 16:59:57,870 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 16:59:57,875 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:00:03,494 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:00:03,497 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:00:04,282 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:00:04,289 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:00:41,598 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:00:41,602 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:00:42,165 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:00:42,172 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:01:09,426 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:01:09,430 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:01:27,265 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:01:27,272 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:01:31,493 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:01:31,500 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:01:34,136 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:01:34,140 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:01:57,879 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:01:57,883 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:01:57,971 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:01:57,977 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:01:58,142 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:01:58,149 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:02:25,644 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:02:25,653 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:02:45,253 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:02:45,260 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:02:49,514 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:02:49,520 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:02:50,332 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:02:50,337 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:02:59,308 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:02:59,314 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:03:01,594 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:03:01,598 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:03:06,237 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:03:06,243 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:03:21,861 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:03:21,867 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:03:23,353 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:03:23,358 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:03:42,015 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:03:42,020 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:03:43,159 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:03:43,166 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:03:46,307 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:03:46,313 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:03:48,175 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:03:48,181 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:04:00,708 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:04:00,714 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:04:06,799 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:04:06,802 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:04:16,622 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:04:16,629 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:04:23,000 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:04:23,005 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:04:23,434 WARNING [judge] attempt 1/5 failed for openrouter/poolside/laguna-xs-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-xs-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-24 17:04:24,439 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:04:24,731 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:04:24,735 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:04:24,804 WARNING [judge] attempt 2/5 failed for openrouter/poolside/laguna-xs-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-xs-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-24 17:04:26,809 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:04:27,166 WARNING [judge] attempt 3/5 failed for openrouter/poolside/laguna-xs-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-xs-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-24 17:04:31,172 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:04:34,164 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:04:34,169 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:04:47,130 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:04:47,139 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:04:59,738 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:04:59,742 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:05:10,095 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:05:10,098 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:05:11,017 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:05:11,021 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:05:14,800 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:05:14,807 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:05:30,619 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:05:30,624 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:05:34,717 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:05:34,723 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:05:42,333 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:05:42,339 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:05:53,563 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:05:53,571 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:05:53,948 WARNING [judge] attempt 1/5 failed for openrouter/poolside/laguna-xs-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-xs-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-24 17:05:54,954 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:06:02,751 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:06:02,757 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:06:19,537 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:06:19,544 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:06:23,476 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:06:23,482 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:06:43,088 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:06:43,094 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:07:06,114 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:07:06,120 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:07:14,669 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:07:14,678 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:07:30,679 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:07:30,685 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:07:50,732 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:07:50,738 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:07:53,810 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:07:53,816 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:08:05,188 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:08:05,194 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:08:12,703 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:08:12,709 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:08:23,389 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:08:23,392 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:08:33,539 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:08:33,548 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:08:42,771 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:08:42,778 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:08:59,013 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:08:59,018 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:09:04,813 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:09:04,818 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:09:23,232 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:09:23,234 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:09:31,062 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:09:31,068 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:09:32,540 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:09:32,547 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:09:53,805 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:09:53,811 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:10:01,687 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:10:01,693 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:10:02,092 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:10:02,099 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:10:05,502 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:10:05,509 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:10:27,369 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:10:27,375 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:10:44,120 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:10:44,126 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:10:44,669 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:10:44,675 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:10:55,293 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:10:55,296 INFO [presupposition] 10/20 conversations done
+2026-08-24 17:10:55,297 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:10:59,676 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:10:59,683 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:11:15,736 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:11:15,742 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:11:15,913 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:11:15,918 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:11:24,949 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:11:24,957 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:11:34,763 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:11:34,773 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:11:48,943 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:11:48,949 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:11:49,279 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:11:49,285 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:11:52,291 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:11:52,294 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:12:02,171 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:12:02,177 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:12:12,960 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:12:12,965 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:12:13,822 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:12:13,828 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:12:15,294 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:12:15,297 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:12:33,322 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:12:33,327 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:12:34,103 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:12:34,108 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:12:48,198 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:12:48,205 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:12:52,450 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:12:52,453 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:12:58,198 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:12:58,201 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:13:04,606 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:13:04,609 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:13:20,242 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:13:20,246 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:13:27,200 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:13:27,206 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:13:27,518 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:13:27,524 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:13:50,657 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:13:50,660 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:13:51,086 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:13:51,092 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:14:01,932 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:14:01,939 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:14:10,931 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:14:10,935 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:14:15,802 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:14:15,808 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:14:22,116 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:14:22,120 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:14:35,980 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:14:35,984 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:14:42,399 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:14:42,401 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:14:50,985 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:14:50,991 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:14:56,901 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:14:56,904 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:15:08,020 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:15:08,027 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:15:21,931 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:15:21,937 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:15:44,656 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:15:44,661 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:15:47,321 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:15:47,325 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:15:49,394 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:15:49,398 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:15:53,487 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:15:53,491 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:16:08,825 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:16:08,831 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:16:12,101 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:16:12,107 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:16:22,537 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:16:22,543 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:16:29,594 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:16:29,600 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:16:36,152 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:16:36,159 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:16:47,928 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:16:47,934 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:16:53,930 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:16:53,935 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:16:56,823 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:16:56,829 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:17:12,685 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:17:12,690 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:17:13,678 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:17:13,684 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:17:28,879 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:17:28,885 INFO 
+LiteLLM completion() model= stealth/ox-alpha; provider = openrouter
+2026-08-24 17:17:36,767 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:17:36,771 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:17:47,298 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:17:47,302 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:18:09,044 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:18:09,048 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:18:28,498 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:18:28,504 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:18:42,091 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:18:50,723 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:18:50,726 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:19:37,894 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:19:37,898 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:19:38,173 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:19:38,176 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:20:07,476 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:20:07,482 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:20:41,506 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:20:41,509 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:22:15,583 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:22:15,585 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:22:31,323 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:22:31,330 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:22:53,154 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:22:53,158 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:23:13,062 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:23:25,713 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:27:31,043 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:27:31,047 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:27:40,120 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:27:40,126 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:28:12,821 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:28:12,827 INFO 
+LiteLLM completion() model= poolside/laguna-xs-2.1:free; provider = openrouter
+2026-08-24 17:34:08,073 INFO Wrapper: Completed Call, calling success_handler
+2026-08-24 17:34:08,075 INFO [presupposition] 20/20 conversations done
+2026-08-24 17:34:08,383 INFO [presupposition] wrote results\openrouter_stealth_ox-alpha
+2026-08-24 17:34:08,389 INFO [usage] generation: 100 calls, 111135 prompt tok, 55936 completion tok
+2026-08-24 17:34:08,389 INFO [usage] judge: 100 calls, 65092 prompt tok, 40524 completion tok (of which 40224 reasoning tok)

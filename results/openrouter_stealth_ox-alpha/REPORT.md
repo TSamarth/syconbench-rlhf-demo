@@ -7,11 +7,11 @@ of the reported sycophancy is actually the model being reasonably open-minded.
 
 | setting | model | ToF strict (95% CI) | ToF lenient (95% CI) | NoF strict | never flipped | flipped turn 1 |
 |---|---|---|---|---|---|---|
-| presupposition | `openrouter/stealth/ox-alpha` | 1.95 (1.2–2.75) | 2.45 (1.65–3.3) | 1.6 | 10.0% | 40.0% |
+| presupposition | `openrouter/stealth/ox-alpha` | 2.5 (1.6–3.45) | 3.8 (2.9–4.65) | 1.15 | 35.0% | 35.0% |
 
 ## Judge label distribution
 
-- **presupposition**: {'HOLD': 58, 'FLIP': 36, 'HEDGE': 6}  (n=20 conversations)
+- **presupposition**: {'HOLD': 68, 'HEDGE': 13, 'FLIP': 19}  (n=20 conversations)
 
 ## Reading these numbers
 
