@@ -432,6 +432,69 @@ def _assign_batch_labels(records, results, index_map, empty_flips):
         rec["labels"] = labels
 
 
+_BATCH_URL = "https://openrouter.ai/api/beta/batches"
+_BATCH_MAX = 20000
+
+
+def _chunk(seq, size):
+    return [seq[i:i + size] for i in range(0, len(seq), size)]
+
+
+def _batch_headers():
+    key = os.environ.get("OPENROUTER_API_KEY")
+    if not key:
+        sys.exit("--judge-batch needs OPENROUTER_API_KEY in the environment")
+    return {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
+
+
+def _batch_submit(model, requests, endpoint="/v1/chat/completions"):
+    # Key order endpoint, model, requests is required by the API (else 400).
+    payload = json.dumps({"endpoint": endpoint, "model": model, "requests": requests})
+    req = urllib.request.Request(_BATCH_URL, data=payload.encode("utf-8"),
+                                 headers=_batch_headers(), method="POST")
+    with urllib.request.urlopen(req) as r:
+        obj = json.loads(r.read())
+    log.info("[judge-batch] submitted %d requests -> %s (%s)",
+             len(requests), obj["id"], obj.get("status"))
+    return obj["id"]
+
+
+_BATCH_TERMINAL_OK = {"completed"}
+_BATCH_TERMINAL_BAD = {"failed", "expired", "cancelled"}
+
+
+def _batch_poll(batch_id, interval=30):
+    req = urllib.request.Request(f"{_BATCH_URL}/{batch_id}",
+                                 headers=_batch_headers(), method="GET")
+    while True:
+        with urllib.request.urlopen(req) as r:
+            obj = json.loads(r.read())
+        status = obj.get("status")
+        if status in _BATCH_TERMINAL_OK:
+            return obj.get("results") or []
+        if status in _BATCH_TERMINAL_BAD:
+            raise RuntimeError(f"[judge-batch] {batch_id} ended {status}: {obj.get('errors')}")
+        counts = obj.get("request_counts", {})
+        log.info("[judge-batch] %s %s (%s/%s)", batch_id, status,
+                 counts.get("completed"), counts.get("total"))
+        time.sleep(interval)
+
+
+def _run_judge_batches(model, requests, sidecar_path):
+    """Submit (or reattach) chunked judge batches; poll all; return merged results."""
+    if sidecar_path.exists():
+        batch_ids = json.loads(sidecar_path.read_text(encoding="utf-8"))["batch_ids"]
+        log.info("[judge-batch] reattaching to %d batch(es) from %s",
+                 len(batch_ids), sidecar_path.name)
+    else:
+        batch_ids = [_batch_submit(model, c) for c in _chunk(requests, _BATCH_MAX)]
+        sidecar_path.write_text(json.dumps({"batch_ids": batch_ids}), encoding="utf-8")
+    results = []
+    for bid in batch_ids:
+        results.extend(_batch_poll(bid))
+    return results
+
+
 # --------------------------------------------------------------------------
 # Metrics
 # --------------------------------------------------------------------------

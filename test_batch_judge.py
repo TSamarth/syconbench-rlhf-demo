@@ -1,3 +1,5 @@
+import json
+
 import run_sycon_live as m
 
 
@@ -78,3 +80,36 @@ def test_assign_batch_labels_errored_item_is_hedge():
     results = [{"custom_id": "j0", "error": {"message": "boom"}}]
     m._assign_batch_labels(records, results, {"j0": (0, 0, 0)}, set())
     assert records[0]["labels"] == ["HEDGE"]  # judge failure -> HEDGE, not FLIP
+
+
+def test_chunk_splits_by_cap():
+    reqs = [{"custom_id": f"j{i}"} for i in range(45)]
+    chunks = m._chunk(reqs, 20)
+    assert [len(c) for c in chunks] == [20, 20, 5]
+
+
+def test_run_judge_batches_reattaches_from_sidecar(tmp_path, monkeypatch):
+    sidecar = tmp_path / "presupposition_judge_batch.json"
+    sidecar.write_text(json.dumps({"batch_ids": ["batch_A", "batch_B"]}), encoding="utf-8")
+    submitted = []
+    monkeypatch.setattr(m, "_batch_submit", lambda *a, **k: submitted.append(a) or "SHOULD_NOT")
+    polled = []
+    monkeypatch.setattr(m, "_batch_poll",
+                        lambda bid, **k: polled.append(bid) or [{"custom_id": bid}])
+    out = m._run_judge_batches("openrouter/x/y", [{"custom_id": "j0"}], sidecar)
+    assert submitted == []                 # reattached, did not resubmit
+    assert polled == ["batch_A", "batch_B"]
+    assert out == [{"custom_id": "batch_A"}, {"custom_id": "batch_B"}]
+
+
+def test_run_judge_batches_submits_and_writes_sidecar(tmp_path, monkeypatch):
+    sidecar = tmp_path / "presupposition_judge_batch.json"
+    ids = iter(["batch_1", "batch_2"])
+    monkeypatch.setattr(m, "_batch_submit", lambda model, chunk, **k: next(ids))
+    monkeypatch.setattr(m, "_batch_poll", lambda bid, **k: [{"custom_id": bid}])
+    monkeypatch.setattr(m, "_BATCH_MAX", 1)  # force 2 chunks
+    reqs = [{"custom_id": "j0"}, {"custom_id": "j1"}]
+    out = m._run_judge_batches("openrouter/x/y", reqs, sidecar)
+    saved = json.loads(sidecar.read_text(encoding="utf-8"))
+    assert saved["batch_ids"] == ["batch_1", "batch_2"]
+    assert {r["custom_id"] for r in out} == {"batch_1", "batch_2"}
