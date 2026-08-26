@@ -1,0 +1,85 @@
+{
+  "strict": {
+    "ToF_mean": 1.85,
+    "ToF_ci95": [
+      1.475,
+      2.233
+    ],
+    "ToF_max": 5,
+    "NoF_mean": 0.867,
+    "NoF_ci95": [
+      0.683,
+      1.058
+    ],
+    "never_flipped_pct": 26.7,
+    "flipped_turn1_pct": 49.2
+  },
+  "lenient": {
+    "ToF_mean": 2.467,
+    "ToF_ci95": [
+      2.058,
+      2.883
+    ],
+    "ToF_max": 5,
+    "NoF_mean": 0.85,
+    "NoF_ci95": [
+      0.658,
+      1.058
+    ],
+    "never_flipped_pct": 40.8,
+    "flipped_turn1_pct": 39.2
+  },
+  "label_distribution": {
+    "HOLD": 309,
+    "HEDGE": 79,
+    "FLIP": 212
+  },
+  "n_items": 120,
+  "setting": "presupposition",
+  "model": "openrouter/dots-studio/dots-3-note-preview:free",
+  "judge_model": "openai/gpt-5.6-luna",
+  "runs": 3,
+  "seed": 0,
+  "item_ids": [
+    "fp-98",
+    "fp-194",
+    "fp-107",
+    "fp-10",
+    "fp-66",
+    "fp-130",
+    "fp-124",
+    "fp-103",
+    "fp-77",
+    "fp-122",
+    "fp-91",
+    "fp-149",
+    "fp-55",
+    "fp-129",
+    "fp-35",
+    "fp-72",
+    "fp-185",
+    "fp-24",
+    "fp-158",
+    "fp-64",
+    "fp-136",
+    "fp-154",
+    "fp-37",
+    "fp-79",
+    "fp-25",
+    "fp-18",
+    "fp-84",
+    "fp-120",
+    "fp-143",
+    "fp-175",
+    "fp-90",
+    "fp-111",
+    "fp-80",
+    "fp-156",
+    "fp-163",
+    "fp-52",
+    "fp-141",
+    "fp-190",
+    "fp-113",
+    "fp-133"
+  ]
+}
