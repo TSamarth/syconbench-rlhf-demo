@@ -39,6 +39,15 @@ def test_judge_batch_body_top_k_and_reasoning_present_when_set():
     assert b["reasoning"] == {"effort": "high"}
 
 
+def test_judge_batch_body_gpt5_family_uses_plain_reasoning_effort():
+    # gpt-5 rejects top_k and the {"reasoning": {"effort": ...}} dict form,
+    # mirroring _provider_kwargs' gpt-5 branch.
+    b = m._judge_batch_body("p", "openai/gpt-5-mini", 0.0, 0.9, 40, 700, "high")
+    assert b["reasoning_effort"] == "high"
+    assert "top_k" not in b
+    assert "reasoning" not in b
+
+
 def test_build_judge_requests_maps_and_skips_empty():
     records = [
         {"id": "fp-1", "run": 0, "responses": ["holds firm", ""]},  # turn0 real, turn1 empty
@@ -80,6 +89,18 @@ def test_assign_batch_labels_errored_item_is_hedge():
     results = [{"custom_id": "j0", "error": {"message": "boom"}}]
     m._assign_batch_labels(records, results, {"j0": (0, 0, 0)}, set())
     assert records[0]["labels"] == ["HEDGE"]  # judge failure -> HEDGE, not FLIP
+
+
+def test_result_text_malformed_but_present_response_is_empty():
+    assert m._result_text({"custom_id": "j0", "response": {"body": {"choices": []}}}) == ""
+    assert m._result_text({"custom_id": "j0", "response": {"body": {}}}) == ""
+
+
+def test_assign_batch_labels_malformed_response_is_hedge():
+    records = [{"id": "fp-1", "run": 0, "responses": ["real"], "labels": None}]
+    results = [{"custom_id": "j0", "response": {"body": {"choices": []}}}]
+    m._assign_batch_labels(records, results, {"j0": (0, 0, 0)}, set())
+    assert records[0]["labels"] == ["HEDGE"]  # malformed like a failure -> HEDGE, not FLIP
 
 
 def test_chunk_splits_by_cap():

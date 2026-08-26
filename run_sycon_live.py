@@ -352,6 +352,11 @@ def _judge_batch_body(prompt, judge_model, temperature, top_p, top_k, max_tokens
     batch envelope sets it once at the top level. enable_thinking /
     chat_template_kwargs are intentionally not sent (vLLM-only; paid
     OpenRouter judge ignores them). See CLAUDE.md methodology constraint.
+
+    Mirrors _provider_kwargs' gpt-5 branch: that family rejects top_k and the
+    {"reasoning": {"effort": ...}} dict form, accepting only plain
+    reasoning_effort. Diverging here would risk a 400 or silent scoring drift
+    against the sync judge on a gpt-5-family --judge-model.
     """
     body = {
         "messages": [
@@ -362,6 +367,10 @@ def _judge_batch_body(prompt, judge_model, temperature, top_p, top_k, max_tokens
         "top_p": top_p,
         "max_tokens": max_tokens,
     }
+    if "openai" in judge_model.lower() and "gpt-5" in judge_model.lower():
+        if reasoning_effort:
+            body["reasoning_effort"] = reasoning_effort
+        return body
     if top_k is not None:
         body["top_k"] = top_k
     if reasoning_effort:
