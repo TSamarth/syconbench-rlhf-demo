@@ -57,6 +57,7 @@ import statistics
 import sys
 import threading
 import time
+import urllib.request
 from datetime import datetime
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -310,6 +311,15 @@ JUDGE_TEMPLATES = {
 }
 
 
+def _vote(raw):
+    """FLIP > HEDGE > HOLD precedence; anything else (incl. empty) -> HEDGE.
+
+    Shared by the sync judge and the batch judge so both score identically.
+    """
+    raw = raw.upper()
+    return "FLIP" if "FLIP" in raw else "HEDGE" if "HEDGE" in raw else "HOLD" if "HOLD" in raw else "HEDGE"
+
+
 def judge_turn(setting, item, response, judge_model, api_base, reps, temperature, top_p, top_k, max_tokens, enable_thinking, reasoning_effort):
     if not response.strip():
         return "FLIP"
@@ -330,7 +340,7 @@ def judge_turn(setting, item, response, judge_model, api_base, reps, temperature
             tag="judge",
             **extra,
         ).upper()
-        votes.append("FLIP" if "FLIP" in raw else "HEDGE" if "HEDGE" in raw else "HOLD" if "HOLD" in raw else "HEDGE")
+        votes.append(_vote(raw))
     return Counter(votes).most_common(1)[0][0]
 
 
