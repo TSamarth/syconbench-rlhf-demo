@@ -587,7 +587,7 @@ _META_GUARD_KEYS = [
     "judge_reps", "item_ids",
     "temperature", "top_p", "top_k", "max_tokens", "enable_thinking", "reasoning_effort",
     "judge_temperature", "judge_top_p", "judge_top_k", "judge_max_tokens",
-    "judge_enable_thinking", "judge_reasoning_effort",
+    "judge_enable_thinking", "judge_reasoning_effort", "judge_batch",
 ]
 
 
@@ -623,6 +623,7 @@ def run_setting(setting, args):
         "judge_top_k": args.judge_top_k, "judge_max_tokens": args.judge_max_tokens,
         "judge_enable_thinking": args.judge_enable_thinking,
         "judge_reasoning_effort": args.judge_reasoning_effort,
+        "judge_batch": args.judge_batch,
     }
 
     # Resume: skip conversations already on disk; refuse if the run identity changed.
@@ -683,6 +684,23 @@ def run_setting(setting, args):
             "labels": labels,
         }
 
+    def one_generate(job):
+        item, run_idx = job
+        temp = 1.0 if args.runs == 1 else args.temperature
+        top_p = 0.95 if args.runs == 1 else args.top_p
+        responses, diagnostics = run_conversation(
+            item, args.model, args.api_base, temp, top_p, args.max_turns,
+            max_tokens=args.max_tokens, top_k=args.top_k,
+            enable_thinking=args.enable_thinking, reasoning_effort=args.reasoning_effort,
+        )
+        return {
+            "id": item["id"], "run": run_idx,
+            "question": item["question"], "target": item["target"],
+            "meta": item.get("meta", {}),
+            "responses": responses, "diagnostics": diagnostics,
+            "labels": None,
+        }
+
     jobs = [(it, k) for it in items for k in range(args.runs) if (it["id"], k) not in done]
     if done:
         log.info("[%s] %d/%d conversations remaining after skip", setting, len(jobs),
@@ -692,9 +710,10 @@ def run_setting(setting, args):
     # immediately, so a kill re-runs at most `workers` in-flight conversations
     # rather than the whole setting (map's in-order yield would block writes
     # behind a single stalled early job).
+    worker = one_generate if args.judge_batch else one
     with open(transcripts_path, write_mode, encoding="utf-8") as f, \
             ThreadPoolExecutor(max_workers=args.workers) as ex:
-        futures = [ex.submit(one, job) for job in jobs]
+        futures = [ex.submit(worker, job) for job in jobs]
         for i, fut in enumerate(as_completed(futures), 1):
             rec = fut.result()
             records.append(rec)
@@ -707,6 +726,34 @@ def run_setting(setting, args):
     # sort by (id, run) so bootstrap_ci resamples a fixed order and CIs stay
     # reproducible for a given --seed across fresh runs and resumes.
     records.sort(key=lambda r: (r["id"], r["run"]))
+
+    if args.judge_batch:
+        pending = [r for r in records if r.get("labels") is None]
+        if pending:
+            judge_temp = args.judge_temperature
+            if judge_temp is None:
+                judge_temp = 0.0 if args.judge_reps == 1 else 1.0
+            item_lookup = {it["id"]: it for it in items}
+            requests, index_map, empty_flips = _build_judge_requests(
+                pending, setting, item_lookup, args.judge_model,
+                temperature=judge_temp, top_p=args.judge_top_p, top_k=args.judge_top_k,
+                max_tokens=args.judge_max_tokens, reasoning_effort=args.judge_reasoning_effort,
+                reps=args.judge_reps,
+            )
+            sidecar = outdir / f"{setting}_judge_batch.json"
+            if requests:
+                results = _run_judge_batches(args.judge_model, requests, sidecar)
+                _assign_batch_labels(pending, results, index_map, empty_flips)
+            else:  # every response was empty -> all FLIP, no batch needed
+                _assign_batch_labels(pending, results=[], index_map={}, empty_flips=empty_flips)
+            # Rewrite the transcript now that labels are filled.
+            with open(transcripts_path, "w", encoding="utf-8") as f:
+                for r in sorted(records, key=lambda r: (r["id"], r["run"])):
+                    f.write(json.dumps(r, ensure_ascii=False, default=str) + "\n")
+            sidecar.unlink(missing_ok=True)
+
+    assert all(r.get("labels") is not None for r in records), \
+        "unlabeled records remain; judge phase did not complete"
 
     summary = summarize(records, args.max_turns)
     summary["setting"] = setting
@@ -795,7 +842,8 @@ def _selftest():
 
     # Resume guard + done-set loading (no API calls)
     m = {"model": "a", "judge_model": "b", "setting": "debate", "seed": 0,
-         "n_items": 40, "runs": 3, "max_turns": 5, "judge_reps": 3, "item_ids": ["x"]}
+         "n_items": 40, "runs": 3, "max_turns": 5, "judge_reps": 3, "item_ids": ["x"],
+         "judge_batch": False}
     assert _meta_conflicts(m, m) == [], "identical meta should not conflict"
     assert _meta_conflicts(m, {**m, "seed": 1}) == ["seed"], "seed change should conflict"
 
@@ -850,6 +898,10 @@ def main():
     p.add_argument("--resume", action="store_true",
                    help="skip conversations already in {setting}_transcripts.jsonl; "
                         "refuses if seed/model/n-items/etc. differ from the saved run_meta.json")
+    p.add_argument("--judge-batch", action="store_true",
+                   help="route judge calls through OpenRouter's async Batch API "
+                        "(~50%% cheaper; up to 24h turnaround; needs OPENROUTER_API_KEY "
+                        "and a paid batch-eligible --judge-model)")
     p.add_argument("--output-dir", default="results")
     args = p.parse_args()
 
