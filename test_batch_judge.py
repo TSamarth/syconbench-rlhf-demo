@@ -1,4 +1,5 @@
 import json
+import types
 
 import run_sycon_live as m
 
@@ -134,3 +135,101 @@ def test_run_judge_batches_submits_and_writes_sidecar(tmp_path, monkeypatch):
     saved = json.loads(sidecar.read_text(encoding="utf-8"))
     assert saved["batch_ids"] == ["batch_1", "batch_2"]
     assert {r["custom_id"] for r in out} == {"batch_1", "batch_2"}
+
+
+def _base_args(output_dir, **overrides):
+    ns = types.SimpleNamespace(
+        model="test/model", judge_model="test/judge", api_base=None, judge_api_base=None,
+        seed=0, n_items=0, runs=1, max_turns=1, judge_reps=1,
+        temperature=0.0, top_p=1.0, top_k=None, max_tokens=64,
+        enable_thinking=False, reasoning_effort=None,
+        judge_temperature=None, judge_top_p=1.0, judge_top_k=None, judge_max_tokens=64,
+        judge_enable_thinking=False, judge_reasoning_effort=None,
+        judge_batch=True, resume=False, output_dir=str(output_dir), workers=1,
+    )
+    for k, v in overrides.items():
+        setattr(ns, k, v)
+    return ns
+
+
+def test_run_setting_overwrite_clears_stale_sidecar(tmp_path, monkeypatch):
+    """A fresh (non-resume) run must not silently reattach to an old batch
+    left behind by a prior crashed/killed --judge-batch run (CLAUDE.md rule 10
+    finding: --seed-fixed custom_ids regenerate identically, so a surviving
+    sidecar would map stale judge verdicts onto brand-new generations)."""
+    item = {"id": "d-1", "system": "sys", "turns": ["u1"], "question": "Q", "target": "T"}
+    monkeypatch.setitem(m.LOADERS, "debate", lambda: [item])
+    monkeypatch.setattr(m, "run_conversation", lambda *a, **k: (["reply"], [None]))
+
+    args = _base_args(tmp_path)
+    outdir = tmp_path / "test_model"
+    outdir.mkdir(parents=True)
+    sidecar = outdir / "debate_judge_batch.json"
+    sidecar.write_text(json.dumps({"batch_ids": ["STALE_BATCH"]}), encoding="utf-8")
+    # A stray transcript, as if a prior run crashed mid-batch-poll.
+    (outdir / "debate_transcripts.jsonl").write_text('{"id":"d-1","run":0}\n', encoding="utf-8")
+
+    submitted_chunks = {}
+
+    def fake_submit(model, chunk, **k):
+        bid = f"NEW_{len(submitted_chunks)}"
+        submitted_chunks[bid] = chunk
+        return bid
+
+    def fake_poll(bid, **k):
+        # If a reattach to the stale sidecar happened, this would be called
+        # with "STALE_BATCH", which was never submitted here -> KeyError.
+        chunk = submitted_chunks[bid]
+        return [{"custom_id": r["custom_id"],
+                  "response": {"body": {"choices": [{"message": {"content": "HOLD"}}]}}}
+                for r in chunk]
+
+    monkeypatch.setattr(m, "_batch_submit", fake_submit)
+    monkeypatch.setattr(m, "_batch_poll", fake_poll)
+
+    m.run_setting("debate", args)
+
+    assert list(submitted_chunks.keys()) == ["NEW_0"]  # fresh submit, no reattach
+    assert not sidecar.exists()  # cleared up front; removed again on completion
+
+
+def test_run_setting_resume_preserves_sidecar(tmp_path, monkeypatch):
+    """--resume must keep reattaching to a batch already in flight for this
+    run identity — that is the intended double-charge-avoidance behaviour."""
+    monkeypatch.setattr(m, "run_conversation",
+                         lambda *a, **k: (_ for _ in ()).throw(AssertionError("should not regenerate")))
+    monkeypatch.setattr(m, "_run_judge_batches",
+                         lambda *a, **k: (_ for _ in ()).throw(AssertionError("should not batch-judge; nothing pending")))
+
+    args = _base_args(tmp_path, resume=True)
+    outdir = tmp_path / "test_model"
+    outdir.mkdir(parents=True)
+    sidecar = outdir / "debate_judge_batch.json"
+    sidecar.write_text(json.dumps({"batch_ids": ["OLD_BATCH"]}), encoding="utf-8")
+
+    record = {"id": "d-1", "run": 0, "question": "Q", "target": "T", "meta": {},
+              "responses": ["reply"], "diagnostics": [None], "labels": ["HOLD"]}
+    (outdir / "debate_transcripts.jsonl").write_text(json.dumps(record) + "\n", encoding="utf-8")
+    meta = {
+        "model": args.model, "judge_model": args.judge_model, "setting": "debate",
+        "seed": args.seed, "n_items": args.n_items, "runs": args.runs,
+        "max_turns": args.max_turns, "judge_reps": args.judge_reps, "item_ids": ["d-1"],
+        "temperature": args.temperature, "top_p": args.top_p, "top_k": args.top_k,
+        "max_tokens": args.max_tokens, "enable_thinking": args.enable_thinking,
+        "reasoning_effort": args.reasoning_effort,
+        "judge_temperature": args.judge_temperature, "judge_top_p": args.judge_top_p,
+        "judge_top_k": args.judge_top_k, "judge_max_tokens": args.judge_max_tokens,
+        "judge_enable_thinking": args.judge_enable_thinking,
+        "judge_reasoning_effort": args.judge_reasoning_effort,
+        "judge_batch": args.judge_batch,
+    }
+    (outdir / "debate_run_meta.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
+
+    # Item lookup only; the single (id, run) pair is already "done" on disk.
+    monkeypatch.setitem(m.LOADERS, "debate",
+                         lambda: [{"id": "d-1", "system": "sys", "turns": ["u1"],
+                                   "question": "Q", "target": "T"}])
+
+    m.run_setting("debate", args)
+
+    assert json.loads(sidecar.read_text(encoding="utf-8"))["batch_ids"] == ["OLD_BATCH"]

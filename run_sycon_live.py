@@ -647,6 +647,12 @@ def run_setting(setting, args):
         # later --resume would merge undetected). Both branches then append.
         transcripts_path.write_text("", encoding="utf-8")
         meta_path.write_text(json.dumps(meta, indent=2), encoding="utf-8")
+        # Also clear any surviving judge-batch sidecar: if a prior --judge-batch run
+        # crashed/was killed mid-poll, the sidecar can hold an old batch id. Since the
+        # seed is fixed, a fresh run regenerates the same custom_ids, so leaving the
+        # sidecar in place would make _run_judge_batches silently reattach to the OLD
+        # batch and map its verdicts onto these new generations.
+        (outdir / f"{setting}_judge_batch.json").unlink(missing_ok=True)
         done = {}
     write_mode = "a"
 
