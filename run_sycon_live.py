@@ -504,6 +504,25 @@ def _run_judge_batches(model, requests, sidecar_path):
     return results
 
 
+def _openai_input_lines(requests, model):
+    """Provider-neutral {custom_id, body} -> OpenAI batch JSONL bytes.
+
+    OpenAI wants the model inside each line's body (OpenRouter set it in the
+    envelope). Strip a leading 'openai/' so the API sees its own slug. Body
+    fields are copied verbatim so the batch request equals the sync judge's.
+    """
+    slug = model.split("/", 1)[1] if model.startswith("openai/") else model
+    out = []
+    for r in requests:
+        out.append(json.dumps({
+            "custom_id": r["custom_id"],
+            "method": "POST",
+            "url": "/v1/chat/completions",
+            "body": {**r["body"], "model": slug},
+        }, ensure_ascii=False))
+    return "\n".join(out).encode("utf-8")
+
+
 # --------------------------------------------------------------------------
 # Metrics
 # --------------------------------------------------------------------------

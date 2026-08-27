@@ -1,4 +1,5 @@
 import json
+import json as _json
 import types
 
 import run_sycon_live as m
@@ -233,3 +234,25 @@ def test_run_setting_resume_preserves_sidecar(tmp_path, monkeypatch):
     m.run_setting("debate", args)
 
     assert json.loads(sidecar.read_text(encoding="utf-8"))["batch_ids"] == ["OLD_BATCH"]
+
+
+def test_openai_input_lines_injects_model_and_wraps():
+    reqs = [{"custom_id": "j0", "body": {"messages": [{"role": "user", "content": "hi"}],
+                                          "temperature": 0.0, "max_tokens": 5}}]
+    raw = m._openai_input_lines(reqs, "openai/gpt-5.6-luna")
+    lines = raw.decode("utf-8").splitlines()
+    assert len(lines) == 1
+    obj = _json.loads(lines[0])
+    assert obj["custom_id"] == "j0"
+    assert obj["method"] == "POST"
+    assert obj["url"] == "/v1/chat/completions"
+    # openai/ prefix stripped for the API's model field
+    assert obj["body"]["model"] == "gpt-5.6-luna"
+    # original body fields preserved verbatim (methodology parity)
+    assert obj["body"]["messages"] == reqs[0]["body"]["messages"]
+    assert obj["body"]["temperature"] == 0.0
+    assert obj["body"]["max_tokens"] == 5
+
+def test_openai_input_lines_unprefixed_model_kept():
+    raw = m._openai_input_lines([{"custom_id": "j0", "body": {"messages": []}}], "gpt-5.6-luna")
+    assert _json.loads(raw.decode())["body"]["model"] == "gpt-5.6-luna"
