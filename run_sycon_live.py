@@ -221,47 +221,19 @@ def call(model, messages, api_base, temperature, top_p, max_tokens=700, retries=
     return ""
 
 
-def _batch_provider(model):
-    """Which API a model routes to, from its prefix.
-
-    'openrouter' or 'openai'; anything else returns its own vendor prefix
-    ('anthropic', 'gemini', ...) so callers can reject it. An unprefixed name
-    is OpenAI -- that is litellm's default route.
-    """
-    if model.startswith("openrouter/"):
-        return "openrouter"
-    if model.startswith("openai/") or "/" not in model:
-        return "openai"
-    return model.split("/", 1)[0]
-
-
-def _plain_reasoning_only(model):
-    """True when the target API rejects vLLM-style extra_body/top_k and the
-    {"reasoning": {"effort": ...}} dict, accepting only plain reasoning_effort.
-
-    Two cases: direct OpenAI (any model, prefixed or not), and an
-    OpenRouter-hosted OpenAI gpt-5. Shared by _provider_kwargs (sync) and
-    _judge_batch_body (batch) so the two can't drift -- a divergence would
-    score differently between the sync and batch judge.
-    """
-    return (_batch_provider(model) == "openai"
-            or ("openai" in model.lower() and "gpt-5" in model.lower()))
-
-
 def _provider_kwargs(model, top_k, enable_thinking, reasoning_effort):
     """Extra call() kwargs, branched on provider quirks.
 
-    Direct-OpenAI models and OpenRouter's gpt-5 reject vLLM-style extra_body
-    (chat_template_kwargs, top_k) and the {"reasoning": {"effort": ...}} dict
-    form; they only accept the plain reasoning_effort field. Everything else
-    (vLLM/open-weight backends via litellm, and other direct providers such as
-    anthropic/) wants both. drop_params=True is a safety net for whatever
-    litellm doesn't already know to strip per-model.
+    OpenAI's gpt-5 family rejects vLLM-style extra_body (chat_template_kwargs,
+    top_k) and the {"reasoning": {"effort": ...}} dict form; it only accepts
+    the plain reasoning_effort field. Everything else (vLLM/open-weight
+    backends via litellm) wants both. drop_params=True is a safety net for
+    whatever litellm doesn't already know to strip per-model.
     """
     kwargs = {"drop_params": True}
     if reasoning_effort:
         kwargs["reasoning_effort"] = reasoning_effort
-    if _plain_reasoning_only(model):
+    if "openai" in model.lower() and "gpt-5" in model.lower():
         return kwargs
     extra_body = {"chat_template_kwargs": {"enable_thinking": enable_thinking}}
     if top_k is not None:
@@ -373,7 +345,7 @@ def judge_turn(setting, item, response, judge_model, api_base, reps, temperature
 
 
 def _judge_batch_body(prompt, judge_model, temperature, top_p, top_k, max_tokens, reasoning_effort):
-    """Raw chat-completions body for one judge request (OpenRouter or OpenAI).
+    """Raw OpenRouter chat-completions body for one judge request.
 
     Batch mode bypasses litellm, so this hand-builds what _provider_kwargs would
     have produced, minus litellm-only fields. `model` is omitted here — the
@@ -381,10 +353,10 @@ def _judge_batch_body(prompt, judge_model, temperature, top_p, top_k, max_tokens
     chat_template_kwargs are intentionally not sent (vLLM-only; paid
     OpenRouter judge ignores them). See CLAUDE.md methodology constraint.
 
-    Shares _plain_reasoning_only with _provider_kwargs: those APIs reject top_k
-    and the {"reasoning": {"effort": ...}} dict form, accepting only plain
+    Mirrors _provider_kwargs' gpt-5 branch: that family rejects top_k and the
+    {"reasoning": {"effort": ...}} dict form, accepting only plain
     reasoning_effort. Diverging here would risk a 400 or silent scoring drift
-    against the sync judge.
+    against the sync judge on a gpt-5-family --judge-model.
     """
     body = {
         "messages": [
@@ -395,7 +367,7 @@ def _judge_batch_body(prompt, judge_model, temperature, top_p, top_k, max_tokens
         "top_p": top_p,
         "max_tokens": max_tokens,
     }
-    if _plain_reasoning_only(judge_model):
+    if "openai" in judge_model.lower() and "gpt-5" in judge_model.lower():
         if reasoning_effort:
             body["reasoning_effort"] = reasoning_effort
         return body
@@ -517,171 +489,19 @@ def _batch_poll(batch_id, interval=30):
         time.sleep(interval)
 
 
-def _openrouter_run_judge_batches(model, requests, sidecar_path):
-    """Submit (or reattach) chunked OpenRouter judge batches; poll all; merge results."""
+def _run_judge_batches(model, requests, sidecar_path):
+    """Submit (or reattach) chunked judge batches; poll all; return merged results."""
     if sidecar_path.exists():
-        meta = json.loads(sidecar_path.read_text(encoding="utf-8"))
-        if meta.get("provider") != "openrouter":
-            raise RuntimeError(
-                f"sidecar {sidecar_path.name} is provider {meta.get('provider')!r}, not 'openrouter'; "
-                "remove it or resume with the matching --judge-model")
-        batch_ids = meta["batch_ids"]
+        batch_ids = json.loads(sidecar_path.read_text(encoding="utf-8"))["batch_ids"]
         log.info("[judge-batch] reattaching to %d batch(es) from %s",
                  len(batch_ids), sidecar_path.name)
     else:
         batch_ids = [_batch_submit(model, c) for c in _chunk(requests, _BATCH_MAX)]
-        sidecar_path.write_text(json.dumps({"provider": "openrouter", "batch_ids": batch_ids}),
-                                encoding="utf-8")
+        sidecar_path.write_text(json.dumps({"batch_ids": batch_ids}), encoding="utf-8")
     results = []
     for bid in batch_ids:
         results.extend(_batch_poll(bid))
     return results
-
-
-def _openai_input_lines(requests, model):
-    """Provider-neutral {custom_id, body} -> OpenAI batch JSONL bytes.
-
-    OpenAI wants the model inside each line's body (OpenRouter set it in the
-    envelope). Strip a leading 'openai/' so the API sees its own slug. Body
-    fields are copied verbatim so the batch request equals the sync judge's.
-    """
-    slug = model.split("/", 1)[1] if model.startswith("openai/") else model
-    out = []
-    for r in requests:
-        out.append(json.dumps({
-            "custom_id": r["custom_id"],
-            "method": "POST",
-            "url": "/v1/chat/completions",
-            "body": {**r["body"], "model": slug},
-        }, ensure_ascii=False))
-    return "\n".join(out).encode("utf-8")
-
-
-_OPENAI_FILES_URL = "https://api.openai.com/v1/files"
-_OPENAI_BATCH_URL = "https://api.openai.com/v1/batches"
-_OPENAI_TERMINAL_OK = {"completed"}
-_OPENAI_TERMINAL_BAD = {"failed", "expired", "cancelled"}
-
-
-def _openai_headers():
-    key = os.environ.get("OPENAI_API_KEY")
-    if not key:
-        sys.exit("--judge-batch with an openai/ judge needs OPENAI_API_KEY in the environment")
-    return {"Authorization": f"Bearer {key}"}
-
-
-def _openai_upload_file(jsonl_bytes, filename="judge_batch.jsonl"):
-    """Upload the batch input JSONL via multipart/form-data; return the file id."""
-    boundary = "----syconbatch" + os.urandom(16).hex()
-    pre = (
-        f"--{boundary}\r\n"
-        f'Content-Disposition: form-data; name="purpose"\r\n\r\nbatch\r\n'
-        f"--{boundary}\r\n"
-        f'Content-Disposition: form-data; name="file"; filename="{filename}"\r\n'
-        f"Content-Type: application/jsonl\r\n\r\n"
-    ).encode("utf-8")
-    body = pre + jsonl_bytes + f"\r\n--{boundary}--\r\n".encode("utf-8")
-    headers = _openai_headers()
-    headers["Content-Type"] = f"multipart/form-data; boundary={boundary}"
-    req = urllib.request.Request(_OPENAI_FILES_URL, data=body, headers=headers, method="POST")
-    with urllib.request.urlopen(req) as r:
-        obj = json.loads(r.read())
-    log.info("[judge-batch] openai uploaded input file %s (%d bytes)", obj["id"], len(body))
-    return obj["id"]
-
-
-def _openai_batch_create(input_file_id):
-    payload = json.dumps({
-        "input_file_id": input_file_id,
-        "endpoint": "/v1/chat/completions",
-        "completion_window": "24h",
-    }).encode("utf-8")
-    headers = _openai_headers()
-    headers["Content-Type"] = "application/json"
-    req = urllib.request.Request(_OPENAI_BATCH_URL, data=payload, headers=headers, method="POST")
-    with urllib.request.urlopen(req) as r:
-        obj = json.loads(r.read())
-    log.info("[judge-batch] openai batch %s (%s)", obj["id"], obj.get("status"))
-    return obj["id"]
-
-
-def _openai_batch_poll(batch_id, interval=30):
-    headers = _openai_headers()
-    while True:
-        req = urllib.request.Request(f"{_OPENAI_BATCH_URL}/{batch_id}", headers=headers, method="GET")
-        with urllib.request.urlopen(req) as r:
-            obj = json.loads(r.read())
-        status = obj.get("status")
-        if status in _OPENAI_TERMINAL_OK:
-            return obj.get("output_file_id"), obj.get("error_file_id")
-        if status in _OPENAI_TERMINAL_BAD:
-            errors = obj.get("errors")
-            err_msg = f": {errors}" if errors else ""
-            raise RuntimeError(f"[judge-batch] openai {batch_id} ended {status}{err_msg}")
-        counts = obj.get("request_counts", {})
-        log.info("[judge-batch] openai %s %s (%s/%s)", batch_id, status,
-                 counts.get("completed"), counts.get("total"))
-        time.sleep(interval)
-
-
-def _openai_download(file_id):
-    """Download a result/error file's content and parse JSONL into result items."""
-    if not file_id:
-        return []
-    headers = _openai_headers()
-    req = urllib.request.Request(f"{_OPENAI_FILES_URL}/{file_id}/content", headers=headers, method="GET")
-    with urllib.request.urlopen(req) as r:
-        raw = r.read().decode("utf-8")
-    return [json.loads(line) for line in raw.splitlines() if line.strip()]
-
-
-_OPENAI_BATCH_MAX = 50000  # ponytail: OpenAI's per-batch request cap; file-size (200MB)
-                           # limit not enforced here — demo scale is hundreds of requests.
-
-
-def _openai_run_judge_batches(model, requests, sidecar_path):
-    """Submit (or reattach to) chunked OpenAI batches; return merged result items.
-
-    Output and error files are both downloaded: an error-file line has `error`
-    set, so _result_text maps it to '' -> HEDGE, matching the sync judge's
-    failed-call semantics.
-    """
-    if sidecar_path.exists():
-        meta = json.loads(sidecar_path.read_text(encoding="utf-8"))
-        if meta.get("provider") != "openai":
-            raise RuntimeError(
-                f"sidecar {sidecar_path.name} is provider {meta.get('provider')!r}, not 'openai'; "
-                "remove it or resume with the matching --judge-model")
-        batch_ids = meta["batch_ids"]
-        log.info("[judge-batch] reattaching to %d openai batch(es) from %s",
-                 len(batch_ids), sidecar_path.name)
-    else:
-        batch_ids = []
-        for chunk in _chunk(requests, _OPENAI_BATCH_MAX):
-            file_id = _openai_upload_file(_openai_input_lines(chunk, model))
-            batch_ids.append(_openai_batch_create(file_id))
-        sidecar_path.write_text(json.dumps({"provider": "openai", "batch_ids": batch_ids}),
-                                encoding="utf-8")
-    results = []
-    for bid in batch_ids:
-        out_id, err_id = _openai_batch_poll(bid)
-        results.extend(_openai_download(out_id))
-        results.extend(_openai_download(err_id))
-    return results
-
-
-def run_judge_batches(judge_model, requests, sidecar_path):
-    """Dispatch judge batching to the backend implied by the --judge-model prefix."""
-    provider = _batch_provider(judge_model)
-    if provider == "openrouter":
-        return _openrouter_run_judge_batches(judge_model, requests, sidecar_path)
-    if provider == "openai":
-        return _openai_run_judge_batches(judge_model, requests, sidecar_path)
-    # Fail here rather than POST e.g. "anthropic/..." to api.openai.com and get a
-    # 400 back from deep inside the poll loop.
-    sys.exit(f"--judge-batch only supports openrouter/ and openai/ judge models; "
-             f"--judge-model {judge_model} routes to {provider}. Drop --judge-batch "
-             f"to judge synchronously.")
 
 
 # --------------------------------------------------------------------------
@@ -830,7 +650,7 @@ def run_setting(setting, args):
         # Also clear any surviving judge-batch sidecar: if a prior --judge-batch run
         # crashed/was killed mid-poll, the sidecar can hold an old batch id. Since the
         # seed is fixed, a fresh run regenerates the same custom_ids, so leaving the
-        # sidecar in place would make run_judge_batches silently reattach to the OLD
+        # sidecar in place would make _run_judge_batches silently reattach to the OLD
         # batch and map its verdicts onto these new generations.
         (outdir / f"{setting}_judge_batch.json").unlink(missing_ok=True)
         done = {}
@@ -928,7 +748,7 @@ def run_setting(setting, args):
             )
             sidecar = outdir / f"{setting}_judge_batch.json"
             if requests:
-                results = run_judge_batches(args.judge_model, requests, sidecar)
+                results = _run_judge_batches(args.judge_model, requests, sidecar)
                 _assign_batch_labels(pending, results, index_map, empty_flips)
             else:  # every response was empty -> all FLIP, no batch needed
                 _assign_batch_labels(pending, results=[], index_map={}, empty_flips=empty_flips)
@@ -1047,16 +867,6 @@ def _selftest():
         assert jobs == [("fp-2", 0), ("fp-2", 1)], f"job filter kept wrong jobs: {jobs}"
     print("OK: resume guard skips done conversations and refuses on config change")
 
-    # Batch provider routing + input lines
-    assert _batch_provider("openai/gpt-5.6-luna") == "openai"
-    assert _batch_provider("gpt-5.6-luna") == "openai"
-    assert _batch_provider("openrouter/x/y") == "openrouter"
-    assert _batch_provider("anthropic/claude-sonnet-4-5") == "anthropic"
-    il_reqs = [{"custom_id": "j0", "body": {"messages": [{"role": "user", "content": "hi"}]}}]
-    il_bytes = _openai_input_lines(il_reqs, "openai/gpt-5.6-luna")
-    assert b'"model": "gpt-5.6-luna"' in il_bytes
-    print("OK: batch provider routing and input line assembly verified")
-
 
 if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "--selftest":
     _selftest()
@@ -1095,11 +905,9 @@ def main():
                    help="skip conversations already in {setting}_transcripts.jsonl; "
                         "refuses if seed/model/n-items/etc. differ from the saved run_meta.json")
     p.add_argument("--judge-batch", action="store_true",
-                   help="route judge calls through the async Batch API of the judge's "
-                        "provider (openrouter/* -> OpenRouter batch, needs OPENROUTER_API_KEY; "
-                        "openai/* or unprefixed -> OpenAI batch, needs OPENAI_API_KEY; other "
-                        "providers unsupported). ~50%% cheaper, up to "
-                        "24h turnaround; judge must be a paid batch-eligible model.")
+                   help="route judge calls through OpenRouter's async Batch API "
+                        "(~50%% cheaper; up to 24h turnaround; needs OPENROUTER_API_KEY "
+                        "and a paid batch-eligible --judge-model)")
     p.add_argument("--output-dir", default="results")
     args = p.parse_args()
 
