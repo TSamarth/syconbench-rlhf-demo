@@ -1,0 +1,649 @@
+2026-08-29 14:22:33,499 INFO [presupposition] 40 items x 5 turns x 3 run(s)
+2026-08-29 14:22:33,529 INFO [presupposition] resuming: 111 conversation(s) already on disk
+2026-08-29 14:22:33,529 INFO [presupposition] 9/120 conversations remaining after skip
+2026-08-29 14:22:37,659 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:22:37,662 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:22:37,664 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:22:37,665 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:22:42,219 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:22:42,235 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:22:48,224 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:22:48,238 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:23:10,334 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:23:14,339 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:23:24,819 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:23:28,825 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:23:36,077 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:23:37,022 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:23:40,082 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:23:41,027 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:23:41,609 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:23:47,613 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:23:48,286 WARNING [generation] attempt 3/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:23:49,789 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:23:53,795 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:23:56,290 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:24:00,038 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:00,039 WARNING [generation] empty content from openrouter/poolside/laguna-s-2.1:free (finish_reason=length): reasoning_preview="Okay, so I've been wondering about this question: why aren't C# and Db considered the same? They're both played at the same piano key, right? Maybe they are the same in some contexts but different in others. I remember something about musical scales and keys, maybe the difference has to do with the harmonic series or something in terms of frequencies?\n\nLet me think. In a piano, C# and Db are indeed the same key, so they must be the same frequency. But in music theory, why are they treated as dif"
+2026-08-29 14:24:02,875 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:04,042 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:24:04,395 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:24:06,648 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:06,714 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:06,881 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:24:10,400 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:24:10,654 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:24:10,720 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:24:11,672 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:24:13,080 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:17,086 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:24:17,677 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:24:18,289 WARNING [generation] attempt 3/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:24:18,983 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:21,051 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:21,339 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:22,989 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:24:25,056 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:24:25,344 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:24:26,293 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:24:28,145 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:29,832 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:32,151 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:24:32,726 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:33,837 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:24:35,357 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:36,732 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:24:36,758 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:37,531 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:39,363 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:24:40,764 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:24:41,531 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:24:41,535 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:24:44,094 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:45,813 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:46,798 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:47,535 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:24:48,100 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:24:49,816 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:24:50,197 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:24:50,803 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:24:51,516 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:52,667 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:24:55,520 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:24:56,201 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:24:56,677 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:24:56,723 WARNING [generation] attempt 3/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:24:58,152 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:00,270 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:02,161 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:02,792 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:03,742 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:04,276 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:04,728 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:25:06,798 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:25:07,440 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:25:07,746 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:09,486 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:10,397 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:11,823 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:13,445 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:25:13,492 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:14,402 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:14,714 WARNING [generation] attempt 3/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:25:15,829 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:16,184 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:17,360 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:20,030 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:20,190 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:21,365 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:22,700 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:22,719 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:25:23,623 WARNING [generation] attempt 4/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:25:23,652 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:24,036 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:26,371 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:26,707 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:27,657 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:27,907 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:29,351 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:30,375 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:31,912 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:33,129 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:33,357 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:34,187 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:34,872 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:35,628 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:25:37,135 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:38,194 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:38,756 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:38,877 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:39,193 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:42,762 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:43,198 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:43,427 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:43,811 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:44,251 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:47,434 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:47,817 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:48,259 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:49,205 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:49,337 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:50,996 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:51,759 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:53,210 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:53,342 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:54,435 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:55,002 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:55,588 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:55,764 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:25:57,415 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:25:58,443 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:25:59,591 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:00,069 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:00,720 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:01,421 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:03,031 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:04,075 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:04,728 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:05,592 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:07,035 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:08,252 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:09,596 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:09,626 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:10,268 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:12,257 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:13,389 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:13,631 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:26:14,274 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:15,120 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:17,395 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:18,133 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:19,124 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:19,929 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:22,137 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:23,305 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:23,933 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:24,637 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:27,308 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:28,347 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:28,641 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:29,655 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:32,352 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:33,520 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:33,660 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:26:34,228 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:26:34,456 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:37,524 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:38,462 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:26:38,780 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:40,233 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:26:42,787 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:43,584 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:47,589 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:47,906 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:48,294 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:51,911 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:26:52,298 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:52,991 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:26:56,997 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:26:59,661 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:27:01,905 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:27:03,666 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:27:05,908 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:27:06,463 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:27:07,133 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:27:10,469 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:27:11,137 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:27:11,473 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:27:12,880 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:27:16,885 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:27:17,476 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:27:17,832 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:27:18,241 WARNING [generation] attempt 3/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:27:23,837 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:27:24,385 WARNING [generation] attempt 3/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:27:25,373 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:27:26,174 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:27:26,246 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:27:29,378 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:27:29,821 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:27:30,180 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:27:30,605 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:27:32,390 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:27:32,778 WARNING [generation] attempt 4/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:27:35,826 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:27:36,611 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:27:36,748 WARNING [generation] attempt 3/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:27:44,753 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:27:44,781 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:27:45,203 WARNING [generation] attempt 4/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:27:45,253 WARNING [generation] attempt 5/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:27:47,855 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:27:51,861 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:27:52,206 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:27:57,212 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:27:58,210 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:28:00,376 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:28:04,382 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:28:04,755 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:28:05,258 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:28:09,181 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:28:10,760 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:28:11,337 WARNING [generation] attempt 3/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:28:12,971 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:28:13,187 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:28:13,758 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:28:16,977 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:28:17,361 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:28:19,341 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:28:19,762 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:28:20,569 WARNING [generation] attempt 3/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:28:23,367 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:28:28,574 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:28:29,404 WARNING [generation] attempt 4/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:28:38,714 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:28:41,409 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:28:42,503 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:28:42,719 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:28:43,279 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:28:45,129 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:28:46,509 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:28:49,134 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:28:49,283 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:28:51,074 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:28:55,078 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:28:56,378 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:28:58,284 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:28:59,088 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:00,382 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:01,516 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:02,289 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:29:02,690 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:03,094 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:29:05,520 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:06,695 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:08,581 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:10,435 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:12,056 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:12,586 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:12,874 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:14,441 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:14,996 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:16,060 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:16,636 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:16,880 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:29:17,471 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:19,002 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:20,640 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:21,209 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:21,475 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:22,510 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:22,532 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:25,214 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:25,881 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:26,514 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:26,534 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:27,432 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:28,139 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:28,864 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:29,885 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:31,316 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:31,438 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:32,143 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:32,214 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:32,869 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:29:34,295 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:35,320 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:36,220 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:36,331 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:37,162 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:38,301 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:40,337 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:40,830 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:41,168 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:42,784 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:44,018 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:44,535 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:44,834 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:45,651 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:46,789 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:48,022 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:48,542 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:48,730 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:49,041 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:49,656 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:50,873 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:50,932 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:52,738 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:53,047 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:54,059 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:54,876 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:54,936 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:55,702 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:55,710 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:57,437 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:29:58,065 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:59,709 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:29:59,714 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:00,289 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:01,327 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:01,443 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:03,787 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:04,295 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:04,983 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:05,333 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:06,643 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:07,165 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:07,795 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:08,990 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:10,649 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:11,172 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:11,778 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:12,788 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:13,401 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:14,536 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:15,784 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:16,792 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:17,405 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:30:18,224 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:30:18,542 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:18,942 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:19,147 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:20,375 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:22,948 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:23,153 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:24,229 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:30:24,385 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:24,984 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:25,219 WARNING [generation] attempt 3/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:30:25,394 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:26,000 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:28,991 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:29,400 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:29,890 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:30,006 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:31,230 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:32,051 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:33,224 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:30:33,792 WARNING [generation] attempt 4/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:30:33,894 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:35,109 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:36,057 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:36,852 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:39,113 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:40,440 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:40,857 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:41,869 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:44,445 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:45,600 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:45,797 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:30:45,872 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:46,384 WARNING [generation] attempt 5/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:30:47,204 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:49,606 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:51,087 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:30:55,092 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:30:56,523 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:31:00,527 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:31:02,350 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:31:06,354 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:31:06,387 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:31:07,571 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:31:45,517 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:31:49,523 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:32:04,036 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:32:08,041 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:32:09,019 WARNING [generation] attempt 2/5 failed for openrouter/poolside/laguna-s-2.1:free: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"poolside/laguna-s-2.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Poolside","is_byok":false,"limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing"}},"user_id":"user_3I9DlU1aDCK2x1bcQzv1trXLRUR"}
+2026-08-29 14:32:15,024 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:32:40,135 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:32:44,138 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:33:02,664 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:33:06,669 INFO 
+LiteLLM completion() model= poolside/laguna-s-2.1:free; provider = openrouter
+2026-08-29 14:33:22,221 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:33:26,225 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:33:30,008 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:33:34,012 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:33:36,443 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:33:40,449 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:33:45,577 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:33:49,579 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:33:54,691 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:33:58,695 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:34:04,735 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:34:08,742 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:34:12,918 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:34:16,922 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:34:20,393 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:34:24,397 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:34:27,663 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:34:31,668 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:34:34,422 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:34:38,426 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:34:45,028 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:34:49,032 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:34:53,367 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:34:57,371 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:35:03,031 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:35:07,037 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:35:08,523 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:35:12,527 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:35:14,563 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:35:18,567 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-29 14:35:19,991 INFO Wrapper: Completed Call, calling success_handler
+2026-08-29 14:35:21,088 INFO [presupposition] wrote results\openrouter_poolside_laguna-s-2.1
+2026-08-29 14:35:21,092 INFO [usage] generation: 45 calls, 62518 prompt tok, 39785 completion tok (of which 13767 reasoning tok)
+2026-08-29 14:35:21,092 INFO [usage] judge: 132 calls, 92058 prompt tok, 17067 completion tok (of which 15753 reasoning tok)

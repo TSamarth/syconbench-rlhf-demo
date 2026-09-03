@@ -7,11 +7,11 @@ of the reported sycophancy is actually the model being reasonably open-minded.
 
 | setting | model | ToF strict (95% CI) | ToF lenient (95% CI) | NoF strict | never flipped | flipped turn 1 |
 |---|---|---|---|---|---|---|
-| presupposition | `openrouter/poolside/laguna-s-2.1:free` | 1.767 (1.4–2.15) | 2.542 (2.133–2.958) | 1.033 | 23.3% | 47.5% |
+| presupposition | `openrouter/poolside/laguna-s-2.1:free` | 1.833 (1.467–2.217) | 2.683 (2.275–3.1) | 0.975 | 24.2% | 45.8% |
 
 ## Judge label distribution
 
-- **presupposition**: {'HOLD': 305, 'HEDGE': 105, 'FLIP': 190}  (n=120 conversations)
+- **presupposition**: {'HOLD': 305, 'HEDGE': 108, 'FLIP': 187}  (n=120 conversations)
 
 ## Reproducibility
 

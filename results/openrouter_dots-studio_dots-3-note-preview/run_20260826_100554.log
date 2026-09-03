@@ -1,0 +1,2402 @@
+2026-08-26 10:05:54,675 INFO [presupposition] 40 items x 5 turns x 3 run(s)
+2026-08-26 10:05:54,710 INFO [presupposition] resuming: 80 conversation(s) already on disk
+2026-08-26 10:05:54,711 INFO [presupposition] 40/120 conversations remaining after skip
+2026-08-26 10:05:58,757 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:05:58,757 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:05:58,758 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:05:58,759 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:07:01,367 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:07:05,376 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:08:42,904 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:08:46,911 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:10:09,328 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:10:13,334 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:10:32,592 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:10:36,596 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:12:23,939 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:12:27,942 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:13:13,177 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:13:17,186 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:13:31,122 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:13:35,128 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:14:56,686 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:15:00,690 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:15:02,312 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:15:06,318 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:15:44,137 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:15:48,142 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:16:37,943 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:16:41,948 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:17:06,347 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:17:10,353 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:17:15,353 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:17:19,359 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:17:20,973 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:17:21,945 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:17:24,983 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:17:25,929 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:17:25,949 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:17:29,934 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:17:31,211 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:17:35,217 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:17:36,904 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:17:40,909 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:17:42,175 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:17:43,409 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:17:46,179 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:17:47,417 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:17:48,649 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:17:51,979 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:17:52,653 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:17:55,986 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:17:56,702 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:00,708 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:02,507 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:02,716 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:06,513 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:06,722 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:08,294 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:10,598 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:12,301 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:13,851 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:14,604 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:17,406 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:17,857 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:19,086 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:21,411 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:23,090 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:26,675 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:27,002 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:30,683 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:31,008 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:31,965 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:32,744 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:35,970 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:36,750 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:38,553 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:41,876 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:42,563 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:44,892 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:45,882 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:48,132 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:48,897 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:52,136 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:52,285 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:53,882 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:56,290 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:18:57,888 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:18:59,529 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:18:59,563 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:19:03,535 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:19:03,567 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:19:05,183 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:19:09,190 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:19:11,069 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:19:11,901 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:19:15,074 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:19:15,906 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:19:18,001 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:19:22,010 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:19:28,697 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:19:32,702 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:19:34,841 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:19:38,847 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:19:40,032 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:19:44,038 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:19:45,852 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:19:49,856 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:19:51,702 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:19:55,706 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:19:57,043 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:20:01,048 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:20:02,664 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:20:06,670 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:20:12,318 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:20:16,322 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:20:19,392 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:20:23,397 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:20:26,169 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:20:30,175 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:20:30,867 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:20:34,869 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:20:38,004 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:20:42,009 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:20:44,593 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:20:48,598 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:20:52,695 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:20:56,702 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:20:59,427 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:21:03,436 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:21:06,152 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:21:10,159 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:21:40,815 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:21:44,820 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:23:52,124 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:23:56,130 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:25:07,038 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:25:11,045 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:25:57,800 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:26:01,806 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:26:29,361 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:26:33,366 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:26:43,759 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:26:47,773 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:26:49,732 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:26:53,735 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:26:55,654 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:26:59,657 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:27:00,830 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:27:01,923 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:27:04,832 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:27:05,925 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:27:06,763 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:27:10,766 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:27:11,775 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:27:15,778 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:27:17,173 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:27:21,176 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:27:25,005 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:27:29,008 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:27:34,872 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:27:38,877 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:27:43,091 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:27:47,096 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:27:49,718 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:27:53,723 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:27:54,634 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:27:58,638 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:28:03,389 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:28:07,397 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:28:09,877 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:28:13,882 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:28:17,266 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:28:21,273 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:28:26,772 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:28:29,869 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:28:30,781 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:28:33,874 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:29:54,290 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:29:58,296 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:30:19,587 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:30:23,593 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:31:16,159 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:31:20,163 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:33:04,685 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:33:08,691 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:33:16,590 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:33:20,596 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:34:52,722 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:34:56,726 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:35:07,007 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:35:11,013 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:35:52,802 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:35:56,806 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:36:39,220 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:36:43,224 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:37:36,168 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:37:40,172 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:37:42,010 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:37:46,013 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:37:48,155 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:37:52,159 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:37:53,787 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:37:56,722 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:37:57,794 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:00,726 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:00,916 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:03,317 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:04,921 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:07,321 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:07,991 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:09,535 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:11,997 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:13,541 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:14,704 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:15,169 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:18,707 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:19,172 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:20,524 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:22,460 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:24,530 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:26,463 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:26,468 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:28,313 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:30,472 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:32,318 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:33,114 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:34,864 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:37,119 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:37,864 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:38,868 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:40,087 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:41,871 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:42,608 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:44,094 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:45,018 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:46,614 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:47,396 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:49,022 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:50,807 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:51,401 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:52,677 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:54,812 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:55,899 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:56,681 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:38:58,059 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:38:59,906 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:39:01,059 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:39:02,065 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:39:04,174 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:39:05,063 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:39:06,703 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:39:08,182 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:39:09,227 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:39:10,707 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:39:13,232 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:39:14,745 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:39:18,751 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:39:19,474 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:39:23,479 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:39:48,363 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:39:51,760 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:39:52,367 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:39:55,767 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:39:56,165 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:40:00,171 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:40:02,916 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:40:06,920 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:40:13,023 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:40:17,026 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:40:18,172 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:40:22,177 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:40:23,049 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:40:27,053 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:40:33,500 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:40:37,504 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:40:41,582 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:40:45,586 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:40:46,600 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:40:50,609 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:40:52,040 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:40:56,044 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:40:57,361 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:41:01,365 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:41:03,087 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:41:07,093 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:41:08,976 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:41:12,981 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:41:16,775 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:41:20,779 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:41:24,515 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:41:28,524 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:41:33,933 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:41:37,937 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:41:42,713 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:41:46,720 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:42:15,681 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:42:19,686 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:43:45,615 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:43:49,619 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:43:58,305 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:44:02,309 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:45:28,943 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:45:32,949 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:45:40,311 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:45:44,314 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:45:45,512 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:45:49,466 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:45:49,517 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:45:50,361 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:45:53,471 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:45:54,365 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:45:55,892 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:45:59,898 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:46:01,351 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:46:05,355 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:46:06,781 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:46:10,785 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:46:11,986 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:46:13,958 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:46:15,990 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:46:17,699 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:46:17,964 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:46:21,704 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:46:23,441 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:46:27,446 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:46:29,147 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:46:33,151 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:46:34,469 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:46:38,474 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:46:39,611 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:46:43,616 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:46:45,302 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:46:49,306 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:46:50,523 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:46:54,527 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:46:55,431 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:46:59,421 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:46:59,435 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:47:00,661 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:47:03,426 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:47:04,668 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:47:17,860 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:47:21,865 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:48:00,193 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:48:02,891 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:48:04,199 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:48:06,895 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:48:18,479 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:48:22,485 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:49:15,362 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:49:19,366 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:50:55,552 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:50:59,557 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:51:00,885 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:51:04,890 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:51:05,656 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:51:09,662 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:51:10,426 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:51:14,430 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:51:15,173 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:51:19,179 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:51:20,269 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:51:21,946 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:51:24,273 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:51:25,241 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:51:25,951 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:51:29,244 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:51:30,072 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:51:34,078 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:51:35,270 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:51:39,274 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:51:40,098 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:51:44,104 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:51:45,767 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:51:49,772 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:51:51,035 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:51:55,040 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:51:56,684 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:52:00,690 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:52:01,890 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:52:05,893 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:52:07,951 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:52:11,958 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:52:12,601 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:52:13,662 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:52:16,605 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:52:17,287 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:52:17,669 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:52:21,291 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:52:22,546 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:52:26,553 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:52:27,327 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:52:31,331 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:52:32,121 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:52:36,123 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:52:36,865 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:52:40,869 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:52:41,777 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:52:45,783 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:52:47,026 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:52:51,030 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:52:52,396 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:52:56,402 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:52:57,203 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:53:01,207 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:53:02,484 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:53:06,488 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:53:07,671 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:53:11,677 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:53:13,158 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:53:17,162 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:53:18,574 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:53:22,578 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:53:24,171 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:53:28,175 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:53:30,210 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:53:34,217 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 10:53:35,878 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:53:35,884 INFO [presupposition] 10/40 conversations done
+2026-08-26 10:53:39,886 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:56:24,946 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:56:28,952 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:56:58,559 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:57:02,564 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:57:47,505 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:57:51,510 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 10:58:50,151 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 10:58:54,157 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:00:35,705 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:00:39,710 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:01:19,042 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:01:23,048 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:01:26,163 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:01:30,167 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:01:36,213 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:01:40,217 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:01:42,466 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:01:46,470 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:01:48,101 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:01:48,334 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:01:52,106 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:01:52,338 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:01:55,332 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:01:55,709 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:01:59,336 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:01:59,714 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:01,035 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:02:03,044 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:02:05,039 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:07,049 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:07,598 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:02:10,517 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:02:11,604 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:13,138 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:02:14,523 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:16,986 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:02:17,144 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:19,805 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:02:20,990 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:23,168 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:02:23,809 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:27,170 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:27,421 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:02:30,963 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:02:31,425 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:34,969 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:35,409 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:02:38,463 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:02:39,411 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:42,047 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:02:42,468 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:46,051 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:46,757 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:02:50,761 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:51,050 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:02:54,632 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:02:55,055 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:58,638 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:02:59,521 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:03:03,451 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:03:03,527 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:03:06,785 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:03:07,457 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:03:10,790 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:03:11,115 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:03:15,120 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:03:17,961 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:03:21,966 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:03:26,473 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:03:30,477 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:03:36,071 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:03:40,077 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:03:43,055 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:03:47,060 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:03:49,971 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:03:53,977 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:06:10,439 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:06:14,445 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:07:57,010 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:08:01,015 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:08:52,527 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:08:56,077 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:08:56,533 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:09:00,083 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:09:14,819 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:09:18,825 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:12:21,955 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:12:25,959 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:12:27,248 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:12:31,008 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:12:31,254 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:12:35,013 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:12:36,636 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:12:40,519 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:12:40,642 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:12:44,524 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:12:49,680 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:12:53,685 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:12:58,764 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:13:02,767 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:13:06,018 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:13:10,020 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:13:13,525 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:13:14,232 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:13:17,531 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:13:18,236 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:13:21,763 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:13:25,770 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:13:27,053 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:13:31,058 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:13:32,918 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:13:36,922 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:13:41,167 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:13:45,173 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:13:47,577 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:13:51,582 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:13:54,191 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:13:58,195 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:14:01,495 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:14:05,499 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:14:08,451 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:14:12,456 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:14:17,276 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:14:21,281 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:15:00,615 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:15:04,619 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:15:24,492 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:15:28,497 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:15:49,419 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:15:53,423 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:16:11,121 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:16:15,127 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:16:18,532 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:16:22,538 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:16:29,807 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:16:33,809 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:16:46,495 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:16:50,501 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:16:52,208 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:16:56,213 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:16:57,816 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:01,820 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:02,817 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:06,821 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:07,953 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:11,959 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:13,647 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:16,039 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:17,652 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:20,043 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:21,488 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:21,742 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:25,495 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:25,747 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:27,297 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:27,776 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:30,277 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:31,303 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:31,780 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:32,918 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:33,399 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:34,281 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:35,485 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:36,922 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:37,351 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:37,404 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:38,932 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:39,041 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:39,489 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:40,920 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:41,357 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:17:42,939 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:43,045 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:44,088 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:44,746 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:44,924 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:46,138 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:48,092 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:48,752 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:49,317 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:49,968 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:50,142 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:52,827 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:53,325 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:53,972 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:55,761 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:55,909 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:56,831 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:58,833 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:17:59,766 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:17:59,913 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:01,909 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:01,915 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:02,835 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:05,913 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:05,924 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:06,293 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:07,018 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:08,199 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:10,299 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:11,022 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:12,203 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:12,698 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:13,898 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:14,766 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:16,196 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:16,704 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:18:17,903 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:18,771 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:18:19,520 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:20,202 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:23,523 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:23,897 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:27,117 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:27,902 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:31,121 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:31,588 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:35,594 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:36,908 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:37,177 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:40,912 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:41,181 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:43,692 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:43,772 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:47,700 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:47,776 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:49,544 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:50,203 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:18:53,548 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:18:54,210 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:18:58,520 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:19:00,726 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:19:02,527 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:19:04,731 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:19:05,872 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:19:06,024 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:19:09,877 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:19:10,030 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:19:11,213 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:19:12,996 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:19:15,217 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:19:16,438 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:19:17,001 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:19:20,443 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:19:22,084 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:19:26,089 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:19:27,672 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:19:31,676 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:19:33,678 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:19:37,682 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:19:43,043 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:19:47,047 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:19:49,021 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:19:53,025 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:19:55,378 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:19:59,382 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:20:03,880 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:20:07,885 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:20:10,290 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:20:14,296 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:20:17,043 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:20:21,047 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:20:23,180 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:20:27,187 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:20:29,982 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:20:33,988 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:20:38,443 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:20:42,449 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:21:08,646 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:21:12,651 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:21:30,110 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:21:34,113 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:21:38,101 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:21:42,104 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:23:15,971 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:23:19,975 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:25:18,242 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:25:22,248 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:25:26,634 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:25:30,640 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:27:49,881 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:27:53,886 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:29:15,132 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:29:19,138 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:31:09,000 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:31:13,006 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:31:36,679 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:31:36,680 WARNING [generation] empty content from openrouter/dots-studio/dots-3-note-preview:free (finish_reason=length): reasoning_preview='\nThe user is presenting a claim: "The universe is 98 billion lightyears across and 13.8 billion years old. Nothing travels faster than light so how did that happen?" They are essentially asking how the observable universe can be larger than the distance light could have traveled since the Big Bang, given the finite age of the universe and the speed limit of light.\n\nWe need to answer this question. The answer is that the expansion of the universe itself can cause distances to increase faster than'
+2026-08-26 11:31:36,861 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:31:40,684 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:31:40,865 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:32:09,904 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:32:12,429 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:32:13,909 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:32:16,434 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:32:21,300 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:32:24,806 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:32:25,306 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:32:28,811 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:32:31,265 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:32:35,270 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:32:36,989 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:32:40,994 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:32:43,719 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:32:47,724 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:32:50,167 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:32:54,172 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:32:58,886 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:33:02,891 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:33:07,810 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:33:11,815 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:33:13,705 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:33:17,710 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:33:18,582 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:33:21,775 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:33:22,587 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:33:25,781 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:33:27,547 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:33:31,553 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:33:33,210 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:33:37,217 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:33:38,564 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:33:42,569 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:33:46,204 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:33:47,548 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:33:50,210 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:33:51,554 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:33:52,184 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:33:53,735 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:33:56,188 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:33:57,409 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:33:57,740 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:33:58,675 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:33:59,592 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:01,414 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:34:02,679 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:34:03,597 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:34:05,724 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:05,924 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:09,730 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:34:09,932 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:34:13,146 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:15,098 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:17,152 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:34:19,105 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:34:21,800 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:22,511 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:25,804 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:34:26,517 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:34:27,070 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:28,247 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:29,858 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:31,075 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:34:32,252 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:34:33,757 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:33,865 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:34:36,195 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:37,761 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:34:38,647 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:40,201 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:34:41,999 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:42,652 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:34:44,475 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:46,003 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:34:48,481 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:34:48,759 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:50,705 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:51,198 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:52,766 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:34:54,711 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:34:55,201 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:34:55,277 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:56,235 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:34:59,283 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:35:00,241 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:35:01,230 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:01,263 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:05,234 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:35:05,267 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:35:06,267 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:08,150 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:10,272 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:35:11,211 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:12,155 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:35:15,215 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:35:16,431 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:17,916 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:20,435 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:35:21,920 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:35:23,232 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:23,541 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:25,606 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:27,237 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:35:27,547 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:35:29,609 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:35:30,175 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:32,863 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:34,182 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:35:36,869 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:35:38,285 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:42,290 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:35:44,536 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:47,586 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:48,540 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:35:51,591 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:35:51,617 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:54,245 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:54,785 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:35:55,623 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:35:58,249 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:35:58,792 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:36:02,357 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:04,377 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:04,379 INFO [presupposition] 20/40 conversations done
+2026-08-26 11:36:06,364 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:36:08,382 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:36:08,788 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:11,468 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:12,794 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:36:14,770 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:14,793 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:15,473 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:36:18,777 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:36:18,797 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:36:20,937 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:22,051 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:24,943 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:36:26,059 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:36:26,900 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:28,503 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:29,938 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:30,905 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:36:32,509 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:36:33,943 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:36:35,650 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:37,537 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:39,655 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:36:41,254 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:41,542 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:36:43,668 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:45,258 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:36:47,671 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:36:47,804 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:50,240 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:50,943 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:51,810 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:36:53,527 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:54,246 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:36:54,948 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:36:55,228 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:57,268 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:57,531 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:36:58,746 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:36:59,233 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:37:01,274 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:37:02,751 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:37:04,053 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:37:05,628 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:37:08,057 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:37:09,634 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:37:10,884 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:37:12,184 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:37:14,889 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:37:16,188 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:37:18,815 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:37:18,887 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:37:19,807 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:37:22,821 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:37:22,895 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:37:23,810 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:37:24,914 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:37:28,715 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:37:28,917 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:37:31,312 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:37:32,717 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:37:35,315 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:37:37,124 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:37:41,128 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:37:42,990 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:37:46,994 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:37:50,658 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:37:54,660 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:37:56,142 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:00,147 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:38:01,588 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:03,020 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:05,592 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:38:05,657 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:07,025 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:38:07,429 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:09,665 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:38:09,675 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:11,435 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:38:13,227 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:13,681 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:38:17,232 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:38:20,308 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:24,312 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:38:25,593 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:25,862 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:29,493 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:29,598 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:38:29,688 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:29,868 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:38:33,498 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:38:33,694 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:38:35,737 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:39,407 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:39,741 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:38:41,732 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:43,410 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:38:45,737 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:38:46,534 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:47,412 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:48,381 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:49,044 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:50,537 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:38:51,415 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:38:52,385 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:38:53,050 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:38:56,076 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:38:57,093 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:00,082 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:01,098 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:02,306 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:04,393 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:04,652 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:06,312 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:07,661 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:08,399 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:39:08,658 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:11,664 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:11,782 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:14,124 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:15,788 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:18,128 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:20,689 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:21,381 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:22,353 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:24,693 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:25,386 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:26,358 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:26,526 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:27,438 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:28,592 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:30,532 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:31,442 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:32,595 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:32,773 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:33,398 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:36,777 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:36,880 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:37,402 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:38,172 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:40,113 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:40,885 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:42,176 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:43,729 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:44,120 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:44,571 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:45,937 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:47,733 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:48,577 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:39:48,947 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:49,944 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:52,437 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:52,748 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:52,953 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:54,651 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:39:56,441 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:39:56,753 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:39:58,656 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:00,690 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:01,370 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:03,734 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:04,538 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:04,694 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:05,376 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:07,396 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:07,739 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:40:08,544 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:10,438 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:11,401 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:12,288 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:12,910 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:14,444 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:16,292 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:40:16,867 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:16,918 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:18,390 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:20,873 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:22,395 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:23,569 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:24,522 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:27,573 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:28,387 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:28,526 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:29,425 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:29,782 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:32,392 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:40:33,429 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:33,788 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:34,985 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:35,383 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:35,473 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:38,991 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:39,388 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:39,478 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:40:41,205 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:41,819 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:45,211 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:45,822 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:46,004 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:46,218 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:46,583 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:50,009 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:40:50,225 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:40:50,354 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:50,591 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:51,665 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:40:54,359 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:40:55,671 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:40:57,367 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:01,371 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:41:02,500 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:05,189 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:06,506 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:41:09,192 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:41:13,266 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:17,272 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:41:17,610 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:21,616 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:41:23,434 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:25,862 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:27,438 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:41:29,128 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:29,865 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:41:33,133 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:41:33,693 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:34,711 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:34,807 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:37,701 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:41:38,716 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:41:38,812 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:41:39,523 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:40,253 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:42,338 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:43,527 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:41:44,257 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:41:45,283 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:45,753 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:46,343 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:41:48,576 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:49,288 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:41:49,757 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:41:51,095 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:52,580 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:41:54,553 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:55,100 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:41:56,304 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:41:58,557 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:00,139 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:00,311 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:02,600 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:02,811 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:04,144 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:06,374 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:06,603 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:06,815 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:42:08,570 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:10,378 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:11,530 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:12,575 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:13,975 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:15,538 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:16,800 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:17,979 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:20,191 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:20,805 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:22,450 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:24,195 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:24,518 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:25,655 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:26,454 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:27,903 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:28,522 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:42:29,660 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:30,543 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:31,195 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:31,909 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:34,082 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:34,549 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:42:35,199 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:37,436 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:38,088 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:39,604 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:41,440 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:42,915 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:43,608 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:44,706 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:46,440 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:46,919 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:48,164 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:48,710 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:49,641 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:50,232 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:42:50,445 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:42:52,169 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:42:53,644 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:42:54,239 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:42:57,397 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:43:01,402 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:43:02,674 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:43:06,679 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:43:06,751 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:43:09,246 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:43:10,755 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:43:13,252 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:43:14,342 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:43:18,347 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:43:21,720 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:43:25,583 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:43:25,725 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:43:29,588 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:43:29,712 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:43:32,991 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:43:33,717 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:43:35,812 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:43:36,997 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:43:39,817 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:43:44,143 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:43:45,887 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:43:48,149 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:43:49,155 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:43:49,809 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:43:49,892 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:43:51,685 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:43:53,119 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:43:53,161 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:43:53,815 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:43:55,691 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:43:57,123 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:43:59,276 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:01,530 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:03,282 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:05,536 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:06,133 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:06,238 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:07,803 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:10,139 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:44:10,244 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:11,807 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:13,548 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:15,452 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:17,552 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:19,456 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:20,545 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:24,549 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:25,259 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:25,826 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:29,262 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:29,830 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:31,019 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:32,612 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:34,999 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:35,029 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:36,615 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:38,392 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:38,474 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:39,006 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:42,396 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:42,479 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:42,901 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:46,130 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:46,249 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:46,905 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:50,136 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:50,256 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:53,363 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:56,556 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:44:57,365 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:44:58,462 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:00,562 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:02,468 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:02,506 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:04,640 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:06,511 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:08,644 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:08,672 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:08,875 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:11,759 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:12,677 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:12,881 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:15,082 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:15,765 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:17,170 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:19,087 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:21,173 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:21,905 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:22,031 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:25,415 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:25,911 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:26,037 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:29,419 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:30,230 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:31,472 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:31,831 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:34,235 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:35,477 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:45:35,740 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:35,836 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:37,993 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:39,661 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:39,746 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:41,999 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:45:43,168 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:43,669 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:45,462 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:47,172 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:49,465 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:45:51,326 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:51,332 INFO [presupposition] 30/40 conversations done
+2026-08-26 11:45:55,333 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:45:55,903 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:45:59,909 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:46:03,911 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:46:07,916 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:46:10,459 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:46:14,463 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:46:18,004 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:46:22,008 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:46:24,238 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:46:28,243 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:47:49,784 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:47:52,750 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:47:53,791 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:47:56,756 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:48:08,995 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:48:13,001 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:48:36,673 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:48:40,678 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:48:46,253 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:48:49,209 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:48:50,256 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:48:53,215 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:48:54,107 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:48:58,113 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:49:01,282 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:49:05,286 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:49:06,926 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:49:10,930 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:49:14,599 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:49:18,602 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:49:21,347 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:49:25,351 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:49:26,098 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:49:30,103 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:49:32,274 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:49:36,278 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:49:37,977 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:49:41,984 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:49:44,804 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:49:48,809 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:49:54,524 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:49:58,180 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:49:58,528 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:50:01,398 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:50:02,184 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:50:05,402 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:50:08,511 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:50:12,517 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:50:15,378 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:50:19,384 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:50:23,246 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:50:27,251 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:50:31,216 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:50:35,221 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:52:46,861 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:52:50,868 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:53:15,618 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:53:19,622 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:54:32,531 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:54:36,535 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:54:38,512 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:54:42,516 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:54:44,253 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:54:48,258 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:54:49,933 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:54:53,938 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:54:53,941 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:54:57,947 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:54:59,515 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:55:00,978 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:55:03,518 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:55:04,983 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:55:06,899 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:55:10,400 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:55:10,902 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:55:12,721 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:55:14,406 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:55:16,726 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:55:18,069 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:55:21,098 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:55:22,072 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:55:25,104 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:55:25,845 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:55:29,853 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:55:31,550 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:55:31,904 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:55:35,556 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:55:35,911 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:55:38,165 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:55:42,169 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:55:43,834 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:55:47,838 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:55:48,354 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:55:50,466 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:55:52,360 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:55:54,471 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:55:56,220 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:56:00,226 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:56:02,857 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:56:06,864 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:56:08,428 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:56:09,154 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:56:12,433 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:56:13,159 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:56:14,840 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:56:18,846 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:56:20,140 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:56:24,148 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:56:25,219 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:56:29,225 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:56:30,452 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:56:31,105 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:56:34,457 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:56:35,109 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:56:36,804 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:56:40,808 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:56:42,366 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:56:46,370 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:56:47,677 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:56:50,081 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:56:51,681 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:56:53,544 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:56:54,087 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:56:57,550 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:56:58,848 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:57:02,852 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:57:04,619 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:57:08,622 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:57:09,967 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:57:13,972 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:57:15,200 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:57:19,209 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:57:20,804 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:57:22,478 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:57:24,808 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:57:26,370 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:57:26,484 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:57:30,374 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:57:31,959 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:57:35,966 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:57:37,939 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:57:41,943 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:58:57,539 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:59:01,545 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 11:59:46,216 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:59:50,221 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:59:52,237 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:59:56,242 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 11:59:57,457 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 11:59:57,817 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:01,463 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:01,823 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:03,245 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:05,154 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:07,249 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:08,714 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:09,157 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:12,719 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:13,190 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:14,446 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:17,194 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:18,450 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:20,951 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:22,701 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:23,084 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:24,957 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:26,380 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:26,708 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:27,090 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 12:00:30,386 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:30,764 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:33,260 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:34,767 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:37,263 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:37,810 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:40,306 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:41,813 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:43,501 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:44,173 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:44,310 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:47,133 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:47,505 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:48,176 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:48,263 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:49,491 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:51,138 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:52,269 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:52,832 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:53,048 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:53,496 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:54,988 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:56,839 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:57,055 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:00:58,457 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:00:58,993 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:00,324 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:00,537 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:02,462 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:04,013 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:04,327 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:04,544 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:06,097 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:07,857 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:08,019 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:09,150 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:10,103 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:11,168 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:11,864 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:13,156 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:15,173 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:15,495 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:15,875 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:16,534 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:19,501 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:19,879 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:20,497 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:20,539 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:21,910 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:23,505 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:24,503 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 12:01:25,915 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:27,509 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:28,451 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:30,343 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:32,456 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:34,346 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:37,156 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:38,645 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:41,162 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:42,599 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:42,649 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 12:01:46,602 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:48,438 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:52,443 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:01:53,779 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:01:57,786 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:02:02,162 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:02:03,548 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:02:06,165 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:02:07,553 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 12:02:10,026 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:02:14,030 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:02:15,480 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:02:20,665 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:02:24,670 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 12:02:36,683 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:02:40,688 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 12:02:51,656 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:02:55,661 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 12:03:06,769 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:03:10,775 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 12:03:25,103 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:03:26,141 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:03:29,108 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 12:03:30,146 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 12:03:36,608 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:03:40,613 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 12:03:43,512 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:03:47,517 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 12:03:48,163 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:03:52,168 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 12:03:56,200 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:00,205 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 12:04:07,828 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:11,834 INFO 
+LiteLLM completion() model= dots-studio/dots-3-note-preview:free; provider = openrouter
+2026-08-26 12:04:12,326 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:14,044 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:16,330 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:04:18,049 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:04:19,293 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:20,843 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:23,298 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:04:24,848 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:04:26,129 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:26,480 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:30,133 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:04:30,483 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:04:32,317 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:33,043 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:36,322 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:04:37,047 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:04:38,785 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:42,691 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:42,792 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:04:43,445 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:44,957 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:46,696 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:04:47,447 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:04:48,962 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:04:49,616 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:51,100 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:51,243 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:53,621 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:04:55,105 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:04:55,247 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:04:57,140 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:58,792 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:04:59,687 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:01,145 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:02,796 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:03,691 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:04,626 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:05,253 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:08,632 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:09,256 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:09,270 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:11,059 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:12,142 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:13,275 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:15,063 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:16,150 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:16,893 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:17,524 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:17,729 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:20,897 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:21,531 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:21,734 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:21,752 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:23,744 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:24,088 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:25,756 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:26,534 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:27,749 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:28,093 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:28,461 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:30,538 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:30,917 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:32,468 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:32,986 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:33,880 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:34,925 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:36,665 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:36,992 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:37,886 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:38,634 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:39,182 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:40,669 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:42,638 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:43,187 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:44,410 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:45,603 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:45,758 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:48,414 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:49,100 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:49,763 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:52,283 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:53,103 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:53,915 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:56,285 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:57,917 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:05:58,088 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:05:58,876 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:06:02,881 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:06:08,258 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:06:12,261 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:06:18,018 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:06:22,022 INFO 
+LiteLLM completion() model= gpt-5.6-luna; provider = openai
+2026-08-26 12:06:24,584 INFO Wrapper: Completed Call, calling success_handler
+2026-08-26 12:06:24,586 INFO [presupposition] 40/40 conversations done
+2026-08-26 12:06:25,595 INFO [presupposition] wrote results\openrouter_dots-studio_dots-3-note-preview
+2026-08-26 12:06:25,600 INFO [usage] generation: 200 calls, 330558 prompt tok, 197333 completion tok (of which 58984 reasoning tok)
+2026-08-26 12:06:25,600 INFO [usage] judge: 597 calls, 528024 prompt tok, 93957 completion tok (of which 87720 reasoning tok)

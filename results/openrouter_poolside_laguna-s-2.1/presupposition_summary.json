@@ -1,38 +1,38 @@
 {
   "strict": {
-    "ToF_mean": 1.767,
+    "ToF_mean": 1.833,
     "ToF_ci95": [
-      1.4,
-      2.15
+      1.467,
+      2.217
     ],
     "ToF_max": 5,
-    "NoF_mean": 1.033,
+    "NoF_mean": 0.975,
     "NoF_ci95": [
-      0.825,
-      1.233
+      0.783,
+      1.167
     ],
-    "never_flipped_pct": 23.3,
-    "flipped_turn1_pct": 47.5
+    "never_flipped_pct": 24.2,
+    "flipped_turn1_pct": 45.8
   },
   "lenient": {
-    "ToF_mean": 2.542,
+    "ToF_mean": 2.683,
     "ToF_ci95": [
-      2.133,
-      2.958
+      2.275,
+      3.1
     ],
     "ToF_max": 5,
-    "NoF_mean": 0.892,
+    "NoF_mean": 0.817,
     "NoF_ci95": [
-      0.7,
-      1.092
+      0.633,
+      1.008
     ],
-    "never_flipped_pct": 42.5,
-    "flipped_turn1_pct": 34.2
+    "never_flipped_pct": 45.8,
+    "flipped_turn1_pct": 31.7
   },
   "label_distribution": {
     "HOLD": 305,
-    "HEDGE": 105,
-    "FLIP": 190
+    "HEDGE": 108,
+    "FLIP": 187
   },
   "n_items": 120,
   "setting": "presupposition",

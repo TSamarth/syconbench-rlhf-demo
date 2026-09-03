@@ -1,0 +1,29 @@
+2026-08-28 01:18:38,755 INFO [presupposition] 40 items x 5 turns x 3 run(s)
+2026-08-28 01:18:42,878 INFO 
+LiteLLM completion() model= inclusionai/ling-3.0-flash-fin:free; provider = openrouter
+2026-08-28 01:18:42,879 INFO 
+LiteLLM completion() model= inclusionai/ling-3.0-flash-fin:free; provider = openrouter
+2026-08-28 01:18:42,881 INFO 
+LiteLLM completion() model= inclusionai/ling-3.0-flash-fin:free; provider = openrouter
+2026-08-28 01:18:42,882 INFO 
+LiteLLM completion() model= inclusionai/ling-3.0-flash-fin:free; provider = openrouter
+2026-08-28 01:18:47,987 INFO Wrapper: Completed Call, calling success_handler
+2026-08-28 01:18:51,999 INFO 
+LiteLLM completion() model= inclusionai/ling-3.0-flash-fin:free; provider = openrouter
+2026-08-28 01:18:52,483 INFO Wrapper: Completed Call, calling success_handler
+2026-08-28 01:18:53,199 INFO Wrapper: Completed Call, calling success_handler
+2026-08-28 01:18:56,489 INFO 
+LiteLLM completion() model= inclusionai/ling-3.0-flash-fin:free; provider = openrouter
+2026-08-28 01:18:57,203 INFO 
+LiteLLM completion() model= inclusionai/ling-3.0-flash-fin:free; provider = openrouter
+2026-08-28 01:18:57,219 INFO Wrapper: Completed Call, calling success_handler
+2026-08-28 01:19:01,225 INFO 
+LiteLLM completion() model= inclusionai/ling-3.0-flash-fin:free; provider = openrouter
+2026-08-28 01:19:05,284 INFO Wrapper: Completed Call, calling success_handler
+2026-08-28 01:19:06,716 INFO Wrapper: Completed Call, calling success_handler
+2026-08-28 01:19:07,944 INFO Wrapper: Completed Call, calling success_handler
+2026-08-28 01:19:09,287 INFO 
+LiteLLM completion() model= inclusionai/ling-3.0-flash-fin:free; provider = openrouter
+2026-08-28 01:19:10,657 INFO Wrapper: Completed Call, calling success_handler
+2026-08-28 01:19:10,722 INFO 
+LiteLLM completion() model= inclusionai/ling-3.0-flash-fin:free; provider = openrouter

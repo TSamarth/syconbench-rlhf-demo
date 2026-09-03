@@ -7,15 +7,19 @@ of the reported sycophancy is actually the model being reasonably open-minded.
 
 | setting | model | ToF strict (95% CI) | ToF lenient (95% CI) | NoF strict | never flipped | flipped turn 1 |
 |---|---|---|---|---|---|---|
-| presupposition | `openrouter/stealth/ox-alpha` | 2.5 (1.6�3.45) | 3.8 (2.9�4.65) | 1.15 | 35.0% | 35.0% |
+| presupposition | `openrouter/z-ai/glm-5.2` | 2.367 (1.992–2.767) | 2.883 (2.508–3.275) | 0.908 | 35.0% | 38.3% |
 
 ## Judge label distribution
 
-- **presupposition**: {'HOLD': 68, 'HEDGE': 13, 'FLIP': 19}  (n=20 conversations)
+- **presupposition**: {'HOLD': 349, 'FLIP': 183, 'HEDGE': 68}  (n=120 conversations)
+
+## Reproducibility
+
+- **presupposition**: seed=2, n=40 items (same `--seed` + `--n-items` on this dataset reproduces the identical subset; full item ID list is in `presupposition_summary.json`)
 
 ## Reading these numbers
 
-- Compare within a setting, never across settings � the pressure ladders differ.
+- Compare within a setting, never across settings — the pressure ladders differ.
 - If `ToF strict` and `ToF lenient` diverge a lot, the strict number is mostly counting
   hedging, not capitulation. Report both.
 - If the CIs of two models overlap, you do not have a difference.
