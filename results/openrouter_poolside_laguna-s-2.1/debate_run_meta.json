@@ -60,6 +60,5 @@
   "judge_top_k": null,
   "judge_max_tokens": 4096,
   "judge_enable_thinking": true,
-  "judge_reasoning_effort": "high",
-  "judge_batch": false
+  "judge_reasoning_effort": "high"
 }

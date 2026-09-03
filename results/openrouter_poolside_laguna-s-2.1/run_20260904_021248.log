@@ -1,0 +1,4 @@
+2026-09-04 02:12:48,998 INFO [debate] 40 items x 5 turns x 3 run(s)
+2026-09-04 02:12:49,030 INFO [debate] resuming: 120 conversation(s) already on disk
+2026-09-04 02:12:49,031 INFO [debate] 0/120 conversations remaining after skip
+2026-09-04 02:12:50,084 INFO [debate] wrote results\openrouter_poolside_laguna-s-2.1
