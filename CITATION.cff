@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the original SYCON-Bench paper this repo re-implements."
+title: "sycon-live: a live re-implementation of SYCON-Bench"
+authors:
+  - family-names: Tibdewal
+    given-names: Samarth
+url: "https://github.com/TSamarth/syconbench-rlhf-demo"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Measuring Sycophancy of Language Models in Multi-turn Dialogues"
+  authors:
+    - family-names: Hong
+      given-names: Jiseung
+    - family-names: Byun
+      given-names: Grace
+    - family-names: Kim
+      given-names: Seungone
+    - family-names: Shu
+      given-names: Kai
+    - family-names: Choi
+      given-names: Jinho D.
+  year: 2025
+  journal: "Findings of the Association for Computational Linguistics: EMNLP 2025"
+  doi: "10.18653/v1/2025.findings-emnlp.121"
+  url: "https://arxiv.org/abs/2505.23840"
